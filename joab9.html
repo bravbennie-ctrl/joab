@@ -1,0 +1,8727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        The Kenya Civil Report (TKCR) | Kenya's Digital Newsroom
+    </title>
+
+    <meta
+        name="description"
+        content="The Kenya Civil Report (TKCR) is a professional Kenyan digital newsroom covering politics, breaking news, counties, business, society, investigations, reports, interviews, opinion, analysis and video journalism."
+    >
+
+    <meta
+        name="keywords"
+        content="Kenya news, Kenyan politics, breaking news, county news, Kenya business, investigations, governance, TKCR, The Kenya Civil Report"
+    >
+
+    <meta
+        name="author"
+        content="Joab James Apopo"
+    >
+
+    <style>
+
+        /* =====================================================
+           01. GLOBAL RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                #f3f1ed;
+
+            color:
+                #1e1e1e;
+
+            line-height:
+                1.6;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        :root {
+
+            --black:
+                #111111;
+
+            --black2:
+                #1b1b1b;
+
+            --dark:
+                #232323;
+
+            --dark3:
+                #2d2d2d;
+
+            --white:
+                #ffffff;
+
+            --cream:
+                #f3f1ed;
+
+            --grey:
+                #777777;
+
+            --light-grey:
+                #e7e3de;
+
+            --brown:
+                #916945;
+
+            --brown-light:
+                #b28a63;
+
+            --brown-dark:
+                #60432e;
+
+            --gold:
+                #c09a70;
+
+            --red:
+                #8b2727;
+
+            --green:
+                #326646;
+
+            --blue:
+                #315d83;
+
+            --shadow:
+                0 12px 35px rgba(0,0,0,.08);
+        }
+
+        .container {
+            width:
+                92%;
+
+            max-width:
+                1380px;
+
+            margin:
+                auto;
+        }
+
+
+        /* =====================================================
+           02. TOP INFORMATION BAR
+        ===================================================== */
+
+        .topbar {
+
+            background:
+                var(--black);
+
+            color:
+                #cfcfcf;
+
+            font-size:
+                12px;
+
+            padding:
+                7px 0;
+        }
+
+        .topbar-inner {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+
+            gap:
+                15px;
+        }
+
+        .topbar-highlight {
+
+            color:
+                var(--gold);
+        }
+
+
+        /* =====================================================
+           03. HEADER
+        ===================================================== */
+
+        header {
+
+            background:
+                var(--black2);
+
+            color:
+                white;
+
+            border-bottom:
+                4px solid var(--brown);
+
+            position:
+                sticky;
+
+            top:
+                0;
+
+            z-index:
+                5000;
+        }
+
+        .header-inner {
+
+            min-height:
+                88px;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+
+            gap:
+                25px;
+        }
+
+        .brand {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                13px;
+        }
+
+        .brand-mark {
+
+            width:
+                55px;
+
+            height:
+                55px;
+
+            background:
+                var(--brown);
+
+            color:
+                #111;
+
+            border-radius:
+                5px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            font-weight:
+                900;
+
+            font-size:
+                13px;
+
+            text-align:
+                center;
+
+            line-height:
+                1.1;
+        }
+
+        .brand-name {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                25px;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .6px;
+        }
+
+        .brand-subtitle {
+
+            color:
+                #aaa;
+
+            font-size:
+                10px;
+
+            letter-spacing:
+                2px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        /* =====================================================
+           04. NAVIGATION
+        ===================================================== */
+
+        nav ul {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            align-items:
+                center;
+
+            justify-content:
+                flex-end;
+
+            gap:
+                13px;
+        }
+
+        nav a {
+
+            color:
+                #eee;
+
+            font-size:
+                12px;
+
+            font-weight:
+                800;
+
+            transition:
+                .2s;
+        }
+
+        nav a:hover {
+
+            color:
+                var(--gold);
+        }
+
+
+        /* =====================================================
+           05. BREAKING NEWS
+        ===================================================== */
+
+        .breaking {
+
+            background:
+                var(--red);
+
+            color:
+                white;
+
+            padding:
+                9px 0;
+        }
+
+        .breaking-inner {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                12px;
+        }
+
+        .breaking-label {
+
+            background:
+                var(--black);
+
+            padding:
+                6px 11px;
+
+            font-size:
+                10px;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                1px;
+
+            white-space:
+                nowrap;
+        }
+
+        .breaking-track {
+
+            overflow:
+                hidden;
+
+            white-space:
+                nowrap;
+
+            flex:
+                1;
+        }
+
+        .breaking-text {
+
+            display:
+                inline-block;
+
+            animation:
+                ticker 22s linear infinite;
+        }
+
+        @keyframes ticker {
+
+            from {
+                transform:
+                    translateX(100%);
+            }
+
+            to {
+                transform:
+                    translateX(-100%);
+            }
+
+        }
+
+
+        /* =====================================================
+           06. SEARCH AREA
+        ===================================================== */
+
+        .search-area {
+
+            background:
+                #292725;
+
+            padding:
+                19px 0;
+        }
+
+        .search-container {
+
+            max-width:
+                1000px;
+
+            margin:
+                auto;
+
+            position:
+                relative;
+        }
+
+        .search-input {
+
+            width:
+                100%;
+
+            padding:
+                16px 55px 16px 19px;
+
+            border:
+                none;
+
+            outline:
+                none;
+
+            border-radius:
+                5px;
+
+            font-size:
+                15px;
+        }
+
+        .search-icon {
+
+            position:
+                absolute;
+
+            right:
+                17px;
+
+            top:
+                50%;
+
+            transform:
+                translateY(-50%);
+
+            background:
+                transparent;
+
+            border:
+                none;
+
+            font-size:
+                20px;
+        }
+
+        .search-help {
+
+            text-align:
+                center;
+
+            color:
+                #a8a8a8;
+
+            font-size:
+                11px;
+
+            margin-top:
+                7px;
+        }
+
+        .search-results {
+
+            display:
+                none;
+
+            margin-top:
+                13px;
+        }
+
+        .search-results.active {
+
+            display:
+                block;
+        }
+
+        .search-result-item {
+
+            background:
+                white;
+
+            padding:
+                17px;
+
+            margin-bottom:
+                7px;
+
+            border-left:
+                4px solid var(--brown);
+
+            border-radius:
+                4px;
+        }
+
+        .search-result-item h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            margin:
+                4px 0;
+        }
+
+        .search-result-item p {
+
+            color:
+                #666;
+
+            font-size:
+                13px;
+        }
+
+
+        /* =====================================================
+           07. HERO
+        ===================================================== */
+
+        .hero {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.45fr .8fr;
+
+            gap:
+                22px;
+
+            margin:
+                30px auto;
+        }
+
+        .hero-feature {
+
+            min-height:
+                570px;
+
+            border-radius:
+                8px;
+
+            overflow:
+                hidden;
+
+            display:
+                flex;
+
+            align-items:
+                flex-end;
+
+            padding:
+                42px;
+
+            color:
+                white;
+
+            background:
+
+                linear-gradient(
+                    rgba(0,0,0,.10),
+                    rgba(0,0,0,.90)
+                ),
+
+                url(
+                    "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=85"
+                )
+
+                center/cover;
+        }
+
+        .section-tag {
+
+            color:
+                var(--brown);
+
+            font-size:
+                11px;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                1.4px;
+
+            text-transform:
+                uppercase;
+        }
+
+        .hero-feature .section-tag {
+
+            color:
+                #d3a477;
+        }
+
+        .hero-feature h2 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                clamp(40px,5vw,64px);
+
+            line-height:
+                1.02;
+
+            margin:
+                10px 0 16px;
+        }
+
+        .hero-feature p {
+
+            max-width:
+                760px;
+
+            color:
+                #ddd;
+        }
+
+        .hero-buttons {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-top:
+                19px;
+        }
+
+
+        .hero-side {
+
+            display:
+                grid;
+
+            grid-template-rows:
+                1fr 1fr;
+
+            gap:
+                22px;
+        }
+
+        .hero-small {
+
+            min-height:
+                274px;
+
+            padding:
+                25px;
+
+            border-radius:
+                8px;
+
+            color:
+                white;
+
+            display:
+                flex;
+
+            align-items:
+                flex-end;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            background-size:
+                cover;
+
+            background-position:
+                center;
+        }
+
+        .hero-small::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            inset:
+                0;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0,0,0,.92)
+                );
+        }
+
+        .hero-small-content {
+
+            position:
+                relative;
+
+            z-index:
+                2;
+        }
+
+        .hero-business {
+
+            background-image:
+                url(
+                    "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1100&q=85"
+                );
+        }
+
+        .hero-counties {
+
+            background-image:
+                url(
+                    "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1100&q=85"
+                );
+        }
+
+
+        /* =====================================================
+           08. BUTTONS
+        ===================================================== */
+
+        .btn {
+
+            border:
+                none;
+
+            border-radius:
+                4px;
+
+            padding:
+                11px 17px;
+
+            font-size:
+                11px;
+
+            font-weight:
+                900;
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                6px;
+
+            transition:
+                .2s;
+        }
+
+        .btn-brown {
+
+            background:
+                var(--brown);
+
+            color:
+                #111;
+        }
+
+        .btn-brown:hover {
+
+            background:
+                #bd956b;
+        }
+
+        .btn-black {
+
+            background:
+                #111;
+
+            color:
+                white;
+        }
+
+        .btn-red {
+
+            background:
+                var(--red);
+
+            color:
+                white;
+        }
+
+        .btn-green {
+
+            background:
+                var(--green);
+
+            color:
+                white;
+        }
+
+        .btn-blue {
+
+            background:
+                var(--blue);
+
+            color:
+                white;
+        }
+
+
+        /* =====================================================
+           09. SECTIONS
+        ===================================================== */
+
+        .section {
+
+            padding:
+                65px 0;
+        }
+
+        .section-dark {
+
+            background:
+                var(--dark);
+
+            color:
+                white;
+        }
+
+        .section-header {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                flex-end;
+
+            gap:
+                20px;
+
+            margin-bottom:
+                27px;
+
+            padding-bottom:
+                10px;
+
+            border-bottom:
+                3px solid var(--black);
+        }
+
+        .section-dark .section-header {
+
+            border-color:
+                #686868;
+        }
+
+        .section-header h2 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                33px;
+        }
+
+        .section-description {
+
+            color:
+                #666;
+
+            font-size:
+                13px;
+
+            margin-top:
+                5px;
+        }
+
+        .section-dark .section-description {
+
+            color:
+                #bbb;
+        }
+
+
+        /* =====================================================
+           10. CATEGORY FILTER
+        ===================================================== */
+
+        .filters {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-bottom:
+                24px;
+        }
+
+        .filter {
+
+            background:
+                white;
+
+            border:
+                1px solid #ccc;
+
+            padding:
+                9px 15px;
+
+            border-radius:
+                20px;
+
+            font-size:
+                11px;
+
+            font-weight:
+                900;
+        }
+
+        .filter:hover,
+        .filter.active {
+
+            background:
+                var(--brown);
+
+            border-color:
+                var(--brown);
+
+            color:
+                white;
+        }
+
+
+        /* =====================================================
+           11. STORY CARDS
+        ===================================================== */
+
+        .story-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                22px;
+        }
+
+        .story-card {
+
+            background:
+                white;
+
+            border:
+                1px solid #ddd7ce;
+
+            border-radius:
+                7px;
+
+            overflow:
+                hidden;
+
+            transition:
+                .25s;
+        }
+
+        .story-card:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                var(--shadow);
+        }
+
+        .story-image {
+
+            height:
+                220px;
+
+            background-size:
+                cover;
+
+            background-position:
+                center;
+        }
+
+        .image-politics {
+
+            background-image:
+                url(
+                    "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1100&q=85"
+                );
+        }
+
+        .image-business {
+
+            background-image:
+                url(
+                    "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1100&q=85"
+                );
+        }
+
+        .image-society {
+
+            background-image:
+                url(
+                    "https://images.unsplash.com/photo-1509099836639-18ba02c7f5d1?auto=format&fit=crop&w=1100&q=85"
+                );
+        }
+
+        .story-body {
+
+            padding:
+                21px;
+        }
+
+        .story-body h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                23px;
+
+            line-height:
+                1.2;
+
+            margin:
+                7px 0 10px;
+        }
+
+        .story-body p {
+
+            color:
+                #666;
+
+            font-size:
+                14px;
+        }
+
+        .story-meta {
+
+            font-size:
+                11px;
+
+            color:
+                #999;
+
+            margin-top:
+                12px;
+        }
+
+        .source {
+
+            display:
+                inline-block;
+
+            margin-top:
+                12px;
+
+            color:
+                var(--brown-dark);
+
+            font-size:
+                11px;
+
+            font-weight:
+                900;
+
+            border-bottom:
+                1px solid var(--brown);
+        }
+
+
+        /* =====================================================
+           12. STORY ACTIONS
+        ===================================================== */
+
+        .story-actions {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                8px;
+
+            margin-top:
+                16px;
+
+            padding-top:
+                13px;
+
+            border-top:
+                1px solid #e2ddd8;
+        }
+
+        .action-group {
+
+            display:
+                flex;
+
+            gap:
+                6px;
+        }
+
+        .action-button {
+
+            background:
+                #f6f3ef;
+
+            border:
+                1px solid #d0cac2;
+
+            padding:
+                7px 10px;
+
+            border-radius:
+                4px;
+
+            font-size:
+                11px;
+
+            font-weight:
+                800;
+        }
+
+        .action-button:hover {
+
+            background:
+                #e9e4dd;
+        }
+
+        .action-button.liked {
+
+            background:
+                var(--red);
+
+            color:
+                white;
+
+            border-color:
+                var(--red);
+        }
+
+        .action-button.following {
+
+            background:
+                var(--brown-dark);
+
+            color:
+                white;
+
+            border-color:
+                var(--brown-dark);
+        }
+
+
+        /* =====================================================
+           13. COMMENTS
+        ===================================================== */
+
+        .comments {
+
+            margin-top:
+                16px;
+
+            padding-top:
+                14px;
+
+            border-top:
+                1px solid #ddd7d0;
+        }
+
+        .comments-title {
+
+            font-size:
+                11px;
+
+            font-weight:
+                900;
+
+            color:
+                var(--brown-dark);
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                1px;
+
+            margin-bottom:
+                9px;
+        }
+
+        .comment-list {
+
+            max-height:
+                190px;
+
+            overflow-y:
+                auto;
+        }
+
+        .comment {
+
+            background:
+                #f5f2ee;
+
+            padding:
+                9px;
+
+            border-radius:
+                4px;
+
+            margin-bottom:
+                6px;
+
+            font-size:
+                12px;
+        }
+
+        .comment strong {
+
+            display:
+                block;
+
+            color:
+                var(--brown-dark);
+        }
+
+        .comment small {
+
+            display:
+                block;
+
+            color:
+                #999;
+
+            margin-top:
+                2px;
+        }
+
+        .comment-form {
+
+            display:
+                flex;
+
+            gap:
+                6px;
+
+            margin-top:
+                8px;
+        }
+
+        .comment-form input {
+
+            flex:
+                1;
+
+            min-width:
+                0;
+
+            padding:
+                9px;
+
+            border:
+                1px solid #d3ccc4;
+
+            border-radius:
+                4px;
+
+            outline:
+                none;
+        }
+
+
+        /* =====================================================
+           14. NEWS STATS
+        ===================================================== */
+
+        .news-stats {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                16px;
+
+            margin-bottom:
+                22px;
+        }
+
+        .news-stat {
+
+            background:
+                #fff;
+
+            padding:
+                20px;
+
+            border-radius:
+                6px;
+
+            border-top:
+                4px solid var(--brown);
+        }
+
+        .news-stat span {
+
+            display:
+                block;
+
+            color:
+                #777;
+
+            font-size:
+                11px;
+        }
+
+        .news-stat strong {
+
+            display:
+                block;
+
+            font-size:
+                28px;
+
+            margin-top:
+                4px;
+        }
+
+
+        /* =====================================================
+           15. TRENDING
+        ===================================================== */
+
+        .trending-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                16px;
+        }
+
+        .trending-card {
+
+            background:
+                #fff;
+
+            padding:
+                20px;
+
+            border-radius:
+                6px;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+        }
+
+        .trending-number {
+
+            font-family:
+                Georgia,
+                serif;
+
+            color:
+                #d8d0c7;
+
+            font-size:
+                45px;
+
+            font-weight:
+                bold;
+
+            position:
+                absolute;
+
+            right:
+                12px;
+
+            top:
+                4px;
+        }
+
+        .trending-card h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                19px;
+
+            position:
+                relative;
+
+            z-index:
+                2;
+        }
+
+
+        /* =====================================================
+           16. INFO CARDS
+        ===================================================== */
+
+        .info-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                20px;
+        }
+
+        .info-card {
+
+            background:
+                white;
+
+            padding:
+                27px;
+
+            border-radius:
+                6px;
+
+            border-top:
+                4px solid var(--brown);
+        }
+
+        .section-dark .info-card {
+
+            background:
+                var(--dark3);
+
+            color:
+                white;
+        }
+
+        .info-card h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                25px;
+
+            margin:
+                7px 0;
+        }
+
+        .info-card p {
+
+            color:
+                #666;
+
+            font-size:
+                14px;
+        }
+
+        .section-dark .info-card p {
+
+            color:
+                #c4c4c4;
+        }
+
+
+        /* =====================================================
+           17. COUNTIES
+        ===================================================== */
+
+        .county-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                12px;
+        }
+
+        .county-card {
+
+            background:
+                #393633;
+
+            color:
+                white;
+
+            padding:
+                20px;
+
+            text-align:
+                center;
+
+            border-radius:
+                5px;
+
+            border-bottom:
+                3px solid var(--brown);
+
+            transition:
+                .2s;
+        }
+
+        .county-card:hover {
+
+            background:
+                #2c2a28;
+
+            transform:
+                translateY(-3px);
+        }
+
+        .county-card strong {
+
+            display:
+                block;
+
+            font-size:
+                18px;
+        }
+
+        .county-card span {
+
+            color:
+                #aaa;
+
+            font-size:
+                11px;
+        }
+
+
+        /* =====================================================
+           18. INVESTIGATIONS
+        ===================================================== */
+
+        .investigation-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                22px;
+        }
+
+        .investigation-feature {
+
+            min-height:
+                380px;
+
+            padding:
+                35px;
+
+            border-radius:
+                8px;
+
+            background:
+
+                linear-gradient(
+                    rgba(0,0,0,.15),
+                    rgba(0,0,0,.88)
+                ),
+
+                url(
+                    "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=85"
+                )
+
+                center/cover;
+
+            color:
+                white;
+
+            display:
+                flex;
+
+            flex-direction:
+                column;
+
+            justify-content:
+                flex-end;
+        }
+
+        .investigation-list {
+
+            display:
+                grid;
+
+            gap:
+                12px;
+        }
+
+        .investigation-item {
+
+            background:
+                #fff;
+
+            padding:
+                20px;
+
+            border-left:
+                4px solid var(--red);
+
+            border-radius:
+                4px;
+        }
+
+        .investigation-item h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                21px;
+
+            margin:
+                5px 0;
+        }
+
+        .investigation-item p {
+
+            color:
+                #666;
+
+            font-size:
+                13px;
+        }
+
+
+        /* =====================================================
+           19. REPORTS
+        ===================================================== */
+
+        .reports-box {
+
+            background:
+                #292725;
+
+            color:
+                white;
+
+            border-radius:
+                8px;
+
+            padding:
+                27px;
+        }
+
+        .report-grid {
+
+            display:
+                grid;
+
+            gap:
+                11px;
+        }
+
+        .report-item {
+
+            background:
+                #393735;
+
+            padding:
+                18px;
+
+            border-left:
+                4px solid var(--brown);
+        }
+
+        .report-item h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                20px;
+        }
+
+        .report-item p {
+
+            color:
+                #c4c4c4;
+
+            font-size:
+                13px;
+
+            margin-top:
+                3px;
+        }
+
+
+        /* =====================================================
+           20. OPINION
+        ===================================================== */
+
+        .opinion-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                20px;
+        }
+
+        .opinion-card {
+
+            background:
+                #e6ddd2;
+
+            border-left:
+                5px solid var(--brown-dark);
+
+            padding:
+                30px;
+        }
+
+        .opinion-card h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                27px;
+
+            margin:
+                8px 0;
+        }
+
+        .opinion-card p {
+
+            color:
+                #555;
+        }
+
+
+        /* =====================================================
+           21. INTERVIEWS
+        ===================================================== */
+
+        .interview-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                20px;
+        }
+
+        .interview-card {
+
+            background:
+                #303030;
+
+            border-top:
+                4px solid var(--brown);
+
+            padding:
+                25px;
+
+            border-radius:
+                5px;
+        }
+
+        .interview-card h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                24px;
+
+            margin:
+                7px 0;
+        }
+
+        .interview-card p {
+
+            color:
+                #c2c2c2;
+
+            font-size:
+                13px;
+        }
+
+
+        /* =====================================================
+           22. VIDEO
+        ===================================================== */
+
+        .video-section {
+
+            background:
+                #171717;
+
+            color:
+                white;
+        }
+
+        .video-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.3fr 1fr;
+
+            gap:
+                20px;
+        }
+
+        .video-feature {
+
+            min-height:
+                360px;
+
+            padding:
+                30px;
+
+            border-radius:
+                7px;
+
+            display:
+                flex;
+
+            flex-direction:
+                column;
+
+            justify-content:
+                flex-end;
+
+            background:
+
+                linear-gradient(
+                    rgba(0,0,0,.12),
+                    rgba(0,0,0,.92)
+                ),
+
+                url(
+                    "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1400&q=85"
+                )
+
+                center/cover;
+        }
+
+        .play-button {
+
+            width:
+                66px;
+
+            height:
+                66px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--brown);
+
+            color:
+                #111;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            font-size:
+                22px;
+
+            margin-bottom:
+                auto;
+        }
+
+        .video-feature h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                32px;
+
+            margin-top:
+                35px;
+        }
+
+        .video-side {
+
+            display:
+                grid;
+
+            gap:
+                12px;
+        }
+
+        .video-item {
+
+            background:
+                #2a2a2a;
+
+            padding:
+                18px;
+
+            border-left:
+                4px solid var(--brown);
+        }
+
+        .video-item p {
+
+            color:
+                #bbb;
+
+            font-size:
+                13px;
+
+            margin-top:
+                3px;
+        }
+
+
+        /* =====================================================
+           23. ABOUT
+        ===================================================== */
+
+        .about-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                .8fr 1.2fr;
+
+            gap:
+                35px;
+
+            align-items:
+                center;
+        }
+
+        .profile-card {
+
+            min-height:
+                430px;
+
+            background:
+                #292929;
+
+            color:
+                white;
+
+            border-radius:
+                8px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            text-align:
+                center;
+
+            padding:
+                30px;
+        }
+
+        .profile-initials {
+
+            width:
+                130px;
+
+            height:
+                130px;
+
+            background:
+                var(--brown);
+
+            color:
+                #111;
+
+            border-radius:
+                50%;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            font-size:
+                43px;
+
+            font-weight:
+                900;
+
+            margin:
+                auto;
+        }
+
+        .profile-card h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                29px;
+
+            margin-top:
+                18px;
+        }
+
+        .profile-card p {
+
+            color:
+                #bbb;
+
+            margin-top:
+                4px;
+        }
+
+        .about-text h2 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                43px;
+
+            margin:
+                7px 0 15px;
+        }
+
+        .about-text p {
+
+            color:
+                #666;
+
+            margin-bottom:
+                12px;
+        }
+
+        .credentials {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                12px;
+
+            margin-top:
+                20px;
+        }
+
+        .credential {
+
+            background:
+                white;
+
+            border-left:
+                4px solid var(--brown);
+
+            padding:
+                16px;
+        }
+
+        .credential strong {
+
+            display:
+                block;
+        }
+
+        .credential span {
+
+            font-size:
+                12px;
+
+            color:
+                #777;
+        }
+
+
+        /* =====================================================
+           24. FOLLOW
+        ===================================================== */
+
+        .follow-section {
+
+            background:
+                var(--brown);
+
+            padding:
+                40px 0;
+        }
+
+        .follow-inner {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+
+            gap:
+                20px;
+        }
+
+        .follow-inner h2 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                31px;
+        }
+
+        .follow-main {
+
+            background:
+                #111;
+
+            color:
+                white;
+
+            border:
+                none;
+
+            padding:
+                14px 22px;
+
+            border-radius:
+                4px;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           25. NEWSROOM STUDIO
+        ===================================================== */
+
+        .studio-section {
+
+            background:
+                #eae6e0;
+        }
+
+        .studio {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                245px 1fr;
+
+            background:
+                #181818;
+
+            border-radius:
+                8px;
+
+            overflow:
+                hidden;
+
+            min-height:
+                700px;
+
+            box-shadow:
+                0 18px 45px rgba(0,0,0,.12);
+        }
+
+        .studio-sidebar {
+
+            background:
+                #202020;
+
+            padding:
+                22px 13px;
+
+            color:
+                white;
+        }
+
+        .studio-sidebar h3 {
+
+            color:
+                var(--gold);
+
+            font-family:
+                Georgia,
+                serif;
+
+            margin:
+                0 0 18px 4px;
+        }
+
+        .studio-button {
+
+            width:
+                100%;
+
+            border:
+                none;
+
+            background:
+                transparent;
+
+            color:
+                #ddd;
+
+            text-align:
+                left;
+
+            padding:
+                12px;
+
+            border-radius:
+                4px;
+
+            margin-bottom:
+                4px;
+
+            font-size:
+                12px;
+
+            font-weight:
+                800;
+        }
+
+        .studio-button:hover,
+
+        .studio-button.active {
+
+            background:
+                var(--brown);
+
+            color:
+                #111;
+        }
+
+        .studio-content {
+
+            background:
+                #f0ece6;
+
+            padding:
+                30px;
+        }
+
+        .studio-page {
+
+            display:
+                none;
+        }
+
+        .studio-page.active {
+
+            display:
+                block;
+        }
+
+        .studio-title {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                35px;
+        }
+
+        .studio-subtitle {
+
+            color:
+                #777;
+
+            margin:
+                4px 0 23px;
+        }
+
+        .studio-stat-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                14px;
+        }
+
+        .studio-stat {
+
+            background:
+                white;
+
+            padding:
+                20px;
+
+            border-radius:
+                6px;
+
+            border-top:
+                4px solid var(--brown);
+        }
+
+        .studio-stat span {
+
+            color:
+                #777;
+
+            font-size:
+                11px;
+
+            display:
+                block;
+        }
+
+        .studio-stat strong {
+
+            font-size:
+                30px;
+
+            display:
+                block;
+
+            margin-top:
+                5px;
+        }
+
+        .editor {
+
+            background:
+                white;
+
+            padding:
+                27px;
+
+            border-radius:
+                7px;
+        }
+
+        .form-group {
+
+            margin-bottom:
+                18px;
+        }
+
+        .form-group label {
+
+            display:
+                block;
+
+            font-size:
+                11px;
+
+            font-weight:
+                900;
+
+            margin-bottom:
+                7px;
+        }
+
+        .form-group input,
+
+        .form-group select,
+
+        .form-group textarea {
+
+            width:
+                100%;
+
+            padding:
+                12px;
+
+            border:
+                1px solid #d0c9c1;
+
+            border-radius:
+                4px;
+
+            outline:
+                none;
+
+            background:
+                white;
+        }
+
+        .story-editor {
+
+            min-height:
+                390px;
+
+            resize:
+                vertical;
+        }
+
+        .editor-buttons {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+        }
+
+        .preview {
+
+            background:
+                #faf8f5;
+
+            border:
+                1px solid #ddd6ce;
+
+            padding:
+                25px;
+
+            margin-top:
+                20px;
+
+            border-radius:
+                6px;
+        }
+
+        .preview img {
+
+            width:
+                100%;
+
+            max-height:
+                360px;
+
+            object-fit:
+                cover;
+
+            border-radius:
+                5px;
+
+            margin-bottom:
+                17px;
+        }
+
+        .preview h2 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                34px;
+
+            margin:
+                6px 0;
+        }
+
+
+        /* =====================================================
+           26. VIDEO RECORDER
+        ===================================================== */
+
+        .recorder {
+
+            background:
+                #111;
+
+            color:
+                white;
+
+            padding:
+                24px;
+
+            border-radius:
+                7px;
+        }
+
+        .camera-screen {
+
+            background:
+                #000;
+
+            min-height:
+                430px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border-radius:
+                6px;
+
+            overflow:
+                hidden;
+
+            margin-bottom:
+                17px;
+        }
+
+        .camera-screen video {
+
+            width:
+                100%;
+
+            max-height:
+                550px;
+
+            object-fit:
+                contain;
+        }
+
+        .timer {
+
+            font-family:
+                monospace;
+
+            font-size:
+                26px;
+
+            margin-bottom:
+                10px;
+        }
+
+        .recorder-buttons {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+        }
+
+        .record-status {
+
+            margin-top:
+                13px;
+
+            background:
+                #292929;
+
+            border-left:
+                4px solid var(--brown);
+
+            padding:
+                11px;
+
+            font-size:
+                12px;
+        }
+
+
+        /* =====================================================
+           27. MANAGEMENT
+        ===================================================== */
+
+        .management-list {
+
+            display:
+                grid;
+
+            gap:
+                12px;
+        }
+
+        .management-item {
+
+            background:
+                white;
+
+            padding:
+                19px;
+
+            border-left:
+                5px solid var(--brown);
+
+            border-radius:
+                5px;
+        }
+
+        .management-item h3 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            margin:
+                5px 0;
+        }
+
+        .management-item p {
+
+            color:
+                #666;
+
+            font-size:
+                13px;
+        }
+
+        .management-item small {
+
+            color:
+                #888;
+
+            font-size:
+                11px;
+        }
+
+        .management-actions {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                7px;
+
+            margin-top:
+                11px;
+        }
+
+
+        /* =====================================================
+           28. STUDIO ALERT
+        ===================================================== */
+
+        .studio-alert {
+
+            display:
+                none;
+
+            padding:
+                12px;
+
+            border-radius:
+                4px;
+
+            margin-bottom:
+                16px;
+
+            font-size:
+                13px;
+
+            font-weight:
+                700;
+        }
+
+        .studio-alert.show {
+
+            display:
+                block;
+        }
+
+        .studio-alert.success {
+
+            background:
+                #dcecdf;
+
+            color:
+                #245a34;
+        }
+
+        .studio-alert.error {
+
+            background:
+                #f0dddd;
+
+            color:
+                #772727;
+        }
+
+
+        /* =====================================================
+           29. FOOTER
+        ===================================================== */
+
+        footer {
+
+            background:
+                #101010;
+
+            color:
+                #bbb;
+
+            padding:
+                55px 0 20px;
+        }
+
+        .footer-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.3fr 1fr 1fr 1fr;
+
+            gap:
+                30px;
+
+            margin-bottom:
+                35px;
+        }
+
+        footer h3 {
+
+            color:
+                white;
+
+            font-family:
+                Georgia,
+                serif;
+
+            margin-bottom:
+                12px;
+        }
+
+        footer li {
+
+            margin:
+                7px 0;
+
+            font-size:
+                13px;
+        }
+
+        footer a:hover {
+
+            color:
+                var(--gold);
+        }
+
+        .footer-bottom {
+
+            border-top:
+                1px solid #333;
+
+            padding-top:
+                16px;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                15px;
+
+            flex-wrap:
+                wrap;
+
+            font-size:
+                11px;
+        }
+
+
+        /* =====================================================
+           30. RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:1100px) {
+
+            .header-inner {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+
+                padding:
+                    15px 0;
+            }
+
+            .hero,
+
+            .about-grid,
+
+            .video-grid,
+
+            .investigation-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .story-grid,
+
+            .info-grid,
+
+            .interview-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .news-stats,
+
+            .trending-grid,
+
+            .county-grid,
+
+            .studio-stat-grid,
+
+            .footer-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .studio {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .studio-sidebar {
+
+                display:
+                    flex;
+
+                overflow-x:
+                    auto;
+
+                gap:
+                    4px;
+            }
+
+            .studio-sidebar h3 {
+
+                display:
+                    none;
+            }
+
+            .studio-button {
+
+                min-width:
+                    145px;
+            }
+
+        }
+
+
+        @media(max-width:650px) {
+
+            .topbar-inner {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+            }
+
+            .breaking-inner {
+
+                align-items:
+                    flex-start;
+            }
+
+            .hero-feature {
+
+                min-height:
+                    450px;
+
+                padding:
+                    25px;
+            }
+
+            .hero-feature h2 {
+
+                font-size:
+                    39px;
+            }
+
+            .story-grid,
+
+            .info-grid,
+
+            .interview-grid,
+
+            .news-stats,
+
+            .trending-grid,
+
+            .county-grid,
+
+            .opinion-grid,
+
+            .credentials,
+
+            .footer-grid,
+
+            .studio-stat-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .comment-form {
+
+                flex-direction:
+                    column;
+            }
+
+            .studio-content {
+
+                padding:
+                    18px;
+            }
+
+            .camera-screen {
+
+                min-height:
+                    280px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ============================================================
+     TOP BAR
+============================================================ -->
+
+<div class="topbar">
+
+    <div class="container topbar-inner">
+
+        <span>
+            THE KENYA CIVIL REPORT (TKCR) • DIGITAL NEWSROOM
+        </span>
+
+        <span class="topbar-highlight">
+            KENYA • NEWS • POLITICS • BUSINESS • SOCIETY
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+
+<header>
+
+    <div class="container header-inner">
+
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                TKCR
+            </div>
+
+            <div>
+
+                <div class="brand-name">
+                    THE KENYA CIVIL REPORT
+                </div>
+
+                <div class="brand-subtitle">
+                    TKCR • News • Politics • Society • Analysis
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#latest">
+                        Latest
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#politics">
+                        Politics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#counties">
+                        Counties
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#business">
+                        Business
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#society">
+                        Society
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#investigations">
+                        Investigations
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#opinion">
+                        Opinion
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#interviews">
+                        Interviews
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#reports">
+                        Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#videos">
+                        Videos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#studio">
+                        Studio
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ============================================================
+     BREAKING BAR
+============================================================ -->
+
+<div class="breaking">
+
+    <div class="container breaking-inner">
+
+        <div class="breaking-label">
+            TKCR BREAKING
+        </div>
+
+        <div class="breaking-track">
+
+            <span class="breaking-text">
+
+                The Kenya Civil Report (TKCR) •
+                Kenya's digital newsroom •
+                Politics • Governance • County Affairs •
+                Business • Society • Investigations •
+                Reports • Analysis • Video Journalism
+
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ============================================================
+     SEARCH
+============================================================ -->
+
+<section class="search-area">
+
+    <div class="container">
+
+
+        <div class="search-container">
+
+            <input
+                id="searchInput"
+                class="search-input"
+                type="search"
+                placeholder="Search TKCR — politics, counties, business, reports..."
+            >
+
+            <button
+                class="search-icon"
+                onclick="searchWebsite()"
+            >
+                🔍
+            </button>
+
+        </div>
+
+
+        <div
+            id="searchHelp"
+            class="search-help"
+        >
+            Search stories, topics, categories and reports
+        </div>
+
+
+        <div
+            id="searchResults"
+            class="search-results"
+        ></div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     HOME
+============================================================ -->
+
+<main id="home">
+
+
+<section class="container hero">
+
+
+    <article class="hero-feature">
+
+        <div>
+
+            <div
+                class="section-tag"
+                style="color:#d3a477"
+            >
+                THE KENYA CIVIL REPORT (TKCR) • KENYA
+            </div>
+
+
+            <h2>
+                Facts First. Context Second. Stories That Matter.
+            </h2>
+
+
+            <p>
+
+                A modern Kenyan digital newsroom covering
+                breaking news, politics, public affairs,
+                counties, business, society, investigations,
+                reports, interviews, opinion, analysis and
+                video journalism.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#latest"
+                    class="btn btn-brown"
+                >
+                    READ LATEST
+                </a>
+
+                <a
+                    href="#studio"
+                    class="btn btn-black"
+                >
+                    TKCR NEWSROOM STUDIO
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <div class="hero-side">
+
+
+        <article class="hero-small hero-business">
+
+            <div class="hero-small-content">
+
+                <div
+                    class="section-tag"
+                    style="color:#d5aa7b"
+                >
+                    BUSINESS
+                </div>
+
+                <h3>
+                    Kenya's economy, business and investment
+                </h3>
+
+            </div>
+
+        </article>
+
+
+        <article class="hero-small hero-counties">
+
+            <div class="hero-small-content">
+
+                <div
+                    class="section-tag"
+                    style="color:#d5aa7b"
+                >
+                    COUNTIES
+                </div>
+
+                <h3>
+                    Stories from Kenya's 47 counties
+                </h3>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     NEWS STATS
+============================================================ -->
+
+<section class="container">
+
+    <div class="news-stats">
+
+
+        <div class="news-stat">
+
+            <span>
+                COVERAGE
+            </span>
+
+            <strong>
+                47
+            </strong>
+
+            <small>
+                Kenyan Counties
+            </small>
+
+        </div>
+
+
+        <div class="news-stat">
+
+            <span>
+                NEWSROOM
+            </span>
+
+            <strong>
+                10+
+            </strong>
+
+            <small>
+                Major desks
+            </small>
+
+        </div>
+
+
+        <div class="news-stat">
+
+            <span>
+                REPORTING
+            </span>
+
+            <strong>
+                24/7
+            </strong>
+
+            <small>
+                Digital publishing model
+            </small>
+
+        </div>
+
+
+        <div class="news-stat">
+
+            <span>
+                FORMAT
+            </span>
+
+            <strong>
+                360°
+            </strong>
+
+            <small>
+                Text, audio & video ready
+            </small>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     LATEST NEWS
+============================================================ -->
+
+<section
+    id="latest"
+    class="section"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Latest News
+                </h2>
+
+                <p class="section-description">
+                    Breaking developments, important stories and
+                    newsroom coverage.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                LATEST
+            </span>
+
+        </div>
+
+
+        <div class="filters">
+
+            <button
+                class="filter active"
+                data-filter="all"
+            >
+                ALL
+            </button>
+
+            <button
+                class="filter"
+                data-filter="news"
+            >
+                NEWS
+            </button>
+
+            <button
+                class="filter"
+                data-filter="politics"
+            >
+                POLITICS
+            </button>
+
+            <button
+                class="filter"
+                data-filter="business"
+            >
+                BUSINESS
+            </button>
+
+            <button
+                class="filter"
+                data-filter="counties"
+            >
+                COUNTIES
+            </button>
+
+            <button
+                class="filter"
+                data-filter="society"
+            >
+                SOCIETY
+            </button>
+
+            <button
+                class="filter"
+                data-filter="investigations"
+            >
+                INVESTIGATIONS
+            </button>
+
+            <button
+                class="filter"
+                data-filter="reports"
+            >
+                REPORTS
+            </button>
+
+        </div>
+
+
+        <div
+            class="story-grid"
+            id="storyGrid"
+        >
+
+
+            <!-- STORY 1 -->
+
+            <article
+                class="story-card"
+                data-category="news politics"
+                data-search="
+                    Kenya politics government public affairs
+                    parliament presidency breaking news
+                "
+            >
+
+                <div
+                    class="story-image image-politics"
+                ></div>
+
+
+                <div class="story-body">
+
+                    <div class="section-tag">
+                        POLITICS • NEWS
+                    </div>
+
+
+                    <h3>
+                        Kenya's Political & Public Affairs Landscape
+                    </h3>
+
+
+                    <p>
+
+                        Track national political developments,
+                        government decisions, parliamentary activity
+                        and public affairs through trusted reporting
+                        and primary documents.
+
+                    </p>
+
+
+                    <div class="story-meta">
+                        Politics Desk • TKCR
+                    </div>
+
+
+                    <a
+                        class="source"
+                        target="_blank"
+                        href="https://www.president.go.ke/"
+                    >
+                        Official Government Information →
+                    </a>
+
+
+                    <div class="story-actions">
+
+
+                        <div class="action-group">
+
+                            <button
+                                class="action-button like-button"
+                                data-story="home-story-1"
+                            >
+                                ❤️
+                                <span>
+                                    0
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="action-button"
+                                onclick="
+                                    focusComment(
+                                        'home-story-1'
+                                    )
+                                "
+                            >
+                                💬 Comment
+                            </button>
+
+
+                            <button
+                                class="action-button"
+                                onclick="
+                                    shareStory(
+                                        'Kenya Political & Public Affairs'
+                                    )
+                                "
+                            >
+                                ↗ Share
+                            </button>
+
+                        </div>
+
+
+                        <button
+                            class="action-button follow-button"
+                            data-story="home-story-1"
+                        >
+                            + Follow
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="comments">
+
+                        <div class="comments-title">
+                            Community Discussion
+                        </div>
+
+
+                        <div
+                            class="comment-list"
+                            id="comment-list-home-story-1"
+                        ></div>
+
+
+                        <form
+                            class="comment-form"
+                            onsubmit="
+                                addComment(
+                                    event,
+                                    'home-story-1'
+                                )
+                            "
+                        >
+
+                            <input
+                                id="comment-home-story-1"
+                                placeholder="Write a comment..."
+                                maxlength="250"
+                                required
+                            >
+
+                            <button
+                                class="btn btn-black"
+                            >
+                                SEND
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- STORY 2 -->
+
+            <article
+                class="story-card"
+                data-category="business reports"
+                data-search="
+                    Kenya economy GDP KNBS business finance
+                    economic growth companies markets
+                "
+            >
+
+                <div
+                    class="story-image image-business"
+                ></div>
+
+
+                <div class="story-body">
+
+                    <div class="section-tag">
+                        BUSINESS • ECONOMY
+                    </div>
+
+
+                    <h3>
+                        Kenya's Economy & Business Environment
+                    </h3>
+
+
+                    <p>
+
+                        Follow economic data, businesses,
+                        finance, investment and market developments
+                        affecting Kenya.
+
+                    </p>
+
+
+                    <div class="story-meta">
+                        Business Desk • TKCR
+                    </div>
+
+
+                    <a
+                        class="source"
+                        target="_blank"
+                        href="https://www.knbs.or.ke/"
+                    >
+                        KNBS Official Statistics →
+                    </a>
+
+
+                    <div class="story-actions">
+
+
+                        <div class="action-group">
+
+                            <button
+                                class="action-button like-button"
+                                data-story="home-story-2"
+                            >
+                                ❤️
+                                <span>
+                                    0
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="action-button"
+                                onclick="
+                                    focusComment(
+                                        'home-story-2'
+                                    )
+                                "
+                            >
+                                💬 Comment
+                            </button>
+
+
+                            <button
+                                class="action-button"
+                                onclick="
+                                    shareStory(
+                                        'Kenya Economy & Business'
+                                    )
+                                "
+                            >
+                                ↗ Share
+                            </button>
+
+                        </div>
+
+
+                        <button
+                            class="action-button follow-button"
+                            data-story="home-story-2"
+                        >
+                            + Follow
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="comments">
+
+                        <div class="comments-title">
+                            Community Discussion
+                        </div>
+
+
+                        <div
+                            class="comment-list"
+                            id="comment-list-home-story-2"
+                        ></div>
+
+
+                        <form
+                            class="comment-form"
+                            onsubmit="
+                                addComment(
+                                    event,
+                                    'home-story-2'
+                                )
+                            "
+                        >
+
+                            <input
+                                id="comment-home-story-2"
+                                placeholder="Write a comment..."
+                                maxlength="250"
+                                required
+                            >
+
+                            <button
+                                class="btn btn-black"
+                            >
+                                SEND
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- STORY 3 -->
+
+            <article
+                class="story-card"
+                data-category="counties news"
+                data-search="
+                    Kenya counties governors devolution
+                    county government county budget local news
+                "
+            >
+
+                <div
+                    class="story-image image-society"
+                ></div>
+
+
+                <div class="story-body">
+
+                    <div class="section-tag">
+                        COUNTIES
+                    </div>
+
+
+                    <h3>
+                        Tracking Kenya's 47 Counties
+                    </h3>
+
+
+                    <p>
+
+                        Follow county governments, governors,
+                        budgets, public services, local politics
+                        and community developments.
+
+                    </p>
+
+
+                    <div class="story-meta">
+                        County Desk • TKCR
+                    </div>
+
+
+                    <a
+                        class="source"
+                        target="_blank"
+                        href="https://cog.go.ke/the-47-counties/"
+                    >
+                        Council of Governors →
+                    </a>
+
+
+                    <div class="story-actions">
+
+
+                        <div class="action-group">
+
+                            <button
+                                class="action-button like-button"
+                                data-story="home-story-3"
+                            >
+                                ❤️
+                                <span>
+                                    0
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="action-button"
+                                onclick="
+                                    focusComment(
+                                        'home-story-3'
+                                    )
+                                "
+                            >
+                                💬 Comment
+                            </button>
+
+
+                            <button
+                                class="action-button"
+                                onclick="
+                                    shareStory(
+                                        'Kenya Counties'
+                                    )
+                                "
+                            >
+                                ↗ Share
+                            </button>
+
+                        </div>
+
+
+                        <button
+                            class="action-button follow-button"
+                            data-story="home-story-3"
+                        >
+                            + Follow
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="comments">
+
+                        <div class="comments-title">
+                            Community Discussion
+                        </div>
+
+
+                        <div
+                            class="comment-list"
+                            id="comment-list-home-story-3"
+                        ></div>
+
+
+                        <form
+                            class="comment-form"
+                            onsubmit="
+                                addComment(
+                                    event,
+                                    'home-story-3'
+                                )
+                            "
+                        >
+
+                            <input
+                                id="comment-home-story-3"
+                                placeholder="Write a comment..."
+                                maxlength="250"
+                                required
+                            >
+
+                            <button
+                                class="btn btn-black"
+                            >
+                                SEND
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     TRENDING
+============================================================ -->
+
+<section
+    class="section"
+    style="padding-top:0"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Trending Now
+                </h2>
+
+                <p class="section-description">
+                    Topics drawing attention across the newsroom.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                TRENDING
+            </span>
+
+        </div>
+
+
+        <div class="trending-grid">
+
+
+            <article class="trending-card">
+
+                <div class="trending-number">
+                    01
+                </div>
+
+                <div class="section-tag">
+                    POLITICS
+                </div>
+
+                <h3>
+                    Kenya's political future
+                </h3>
+
+            </article>
+
+
+            <article class="trending-card">
+
+                <div class="trending-number">
+                    02
+                </div>
+
+                <div class="section-tag">
+                    ECONOMY
+                </div>
+
+                <h3>
+                    Cost of living & economic performance
+                </h3>
+
+            </article>
+
+
+            <article class="trending-card">
+
+                <div class="trending-number">
+                    03
+                </div>
+
+                <div class="section-tag">
+                    COUNTIES
+                </div>
+
+                <h3>
+                    Devolution & county development
+                </h3>
+
+            </article>
+
+
+            <article class="trending-card">
+
+                <div class="trending-number">
+                    04
+                </div>
+
+                <div class="section-tag">
+                    SOCIETY
+                </div>
+
+                <h3>
+                    Issues affecting Kenyan communities
+                </h3>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     POLITICS
+============================================================ -->
+
+<section
+    id="politics"
+    class="section section-dark"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Politics & Public Affairs
+                </h2>
+
+                <p class="section-description">
+                    National leadership, policy, Parliament,
+                    elections and public affairs.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                POLITICS DESK
+            </span>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    PARLIAMENT
+                </div>
+
+                <h3>
+                    Bills & Legislation
+                </h3>
+
+                <p>
+
+                    Follow Bills, House Business, legislative
+                    proceedings and parliamentary records.
+
+                </p>
+
+                <a
+                    class="source"
+                    href="https://www.parliament.go.ke/"
+                    target="_blank"
+                >
+                    Parliament of Kenya →
+                </a>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    ELECTIONS
+                </div>
+
+                <h3>
+                    Electoral Affairs
+                </h3>
+
+                <p>
+
+                    Check official electoral publications,
+                    notices and information.
+
+                </p>
+
+                <a
+                    class="source"
+                    href="https://www.iebc.or.ke/"
+                    target="_blank"
+                >
+                    IEBC →
+                </a>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    GOVERNANCE
+                </div>
+
+                <h3>
+                    Public Leadership
+                </h3>
+
+                <p>
+
+                    Coverage of public administration,
+                    governance and national policy.
+
+                </p>
+
+                <a
+                    class="source"
+                    href="https://www.president.go.ke/"
+                    target="_blank"
+                >
+                    Presidency →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     COUNTIES
+============================================================ -->
+
+<section
+    id="counties"
+    class="section"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    County News
+                </h2>
+
+                <p class="section-description">
+                    Local government, leadership, public spending
+                    and communities across Kenya.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                47 COUNTIES
+            </span>
+
+        </div>
+
+
+        <div class="county-grid">
+
+
+            <div class="county-card">
+                <strong>Nairobi</strong>
+                <span>047</span>
+            </div>
+
+            <div class="county-card">
+                <strong>Mombasa</strong>
+                <span>001</span>
+            </div>
+
+            <div class="county-card">
+                <strong>Kisumu</strong>
+                <span>042</span>
+            </div>
+
+            <div class="county-card">
+                <strong>Nakuru</strong>
+                <span>032</span>
+            </div>
+
+            <div class="county-card">
+                <strong>Kiambu</strong>
+                <span>022</span>
+            </div>
+
+            <div class="county-card">
+                <strong>Machakos</strong>
+                <span>016</span>
+            </div>
+
+            <div class="county-card">
+                <strong>Kakamega</strong>
+                <span>037</span>
+            </div>
+
+            <div class="county-card">
+                <strong>All 47 Counties</strong>
+                <span>Nationwide</span>
+            </div>
+
+
+        </div>
+
+
+        <a
+            class="btn btn-brown"
+            style="margin-top:20px"
+            target="_blank"
+            href="https://cog.go.ke/the-47-counties/"
+        >
+            VIEW COUNTY DIRECTORY
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     BUSINESS
+============================================================ -->
+
+<section
+    id="business"
+    class="section section-dark"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Business & Economy
+                </h2>
+
+                <p class="section-description">
+                    Markets, businesses, finance, investment and
+                    economic developments affecting Kenya.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                BUSINESS DESK
+            </span>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    ECONOMY
+                </div>
+
+                <h3>
+                    Economic Growth
+                </h3>
+
+                <p>
+
+                    Follow GDP, sectors, employment, prices
+                    and wider economic developments.
+
+                </p>
+
+                <a
+                    class="source"
+                    target="_blank"
+                    href="https://www.knbs.or.ke/"
+                >
+                    KNBS →
+                </a>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    FINANCE
+                </div>
+
+                <h3>
+                    Banking & Money
+                </h3>
+
+                <p>
+
+                    Monetary policy, interest rates,
+                    banking and financial developments.
+
+                </p>
+
+                <a
+                    class="source"
+                    target="_blank"
+                    href="https://www.centralbank.go.ke/"
+                >
+                    Central Bank of Kenya →
+                </a>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    MARKETS
+                </div>
+
+                <h3>
+                    Corporate Kenya
+                </h3>
+
+                <p>
+
+                    Companies, capital markets,
+                    regulation and investment.
+
+                </p>
+
+                <a
+                    class="source"
+                    target="_blank"
+                    href="https://www.cma.or.ke/"
+                >
+                    Capital Markets Authority →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     SOCIETY
+============================================================ -->
+
+<section
+    id="society"
+    class="section"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Society
+                </h2>
+
+                <p class="section-description">
+                    People, education, health, youth, culture
+                    and community affairs.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                SOCIETY DESK
+            </span>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    HEALTH
+                </div>
+
+                <h3>
+                    Public Health
+                </h3>
+
+                <p>
+
+                    Healthcare services, public health,
+                    policy and access.
+
+                </p>
+
+                <a
+                    class="source"
+                    target="_blank"
+                    href="https://www.health.go.ke/"
+                >
+                    Ministry of Health →
+                </a>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    EDUCATION
+                </div>
+
+                <h3>
+                    Education
+                </h3>
+
+                <p>
+
+                    Schools, education policy, learners,
+                    teachers and education development.
+
+                </p>
+
+                <a
+                    class="source"
+                    target="_blank"
+                    href="https://www.education.go.ke/"
+                >
+                    Ministry of Education →
+                </a>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <div class="section-tag">
+                    COMMUNITIES
+                </div>
+
+                <h3>
+                    People & Culture
+                </h3>
+
+                <p>
+
+                    Human-interest stories, social issues,
+                    communities, culture and youth.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     INVESTIGATIONS
+============================================================ -->
+
+<section
+    id="investigations"
+    class="section section-dark"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Investigations
+                </h2>
+
+                <p class="section-description">
+                    Public-interest reporting built around
+                    records, evidence and accountability.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                INVESTIGATIONS DESK
+            </span>
+
+        </div>
+
+
+        <div class="investigation-grid">
+
+
+            <div class="investigation-feature">
+
+                <div
+                    class="section-tag"
+                    style="color:#d6aa7d"
+                >
+                    PUBLIC INTEREST
+                </div>
+
+                <h3
+                    style="
+                    font-family:Georgia,serif;
+                    font-size:38px;
+                    margin-top:8px;
+                    "
+                >
+                    Beyond The Headlines
+                </h3>
+
+                <p
+                    style="
+                    color:#ddd;
+                    margin-top:10px;
+                    "
+                >
+
+                    Deep reporting on governance,
+                    public finance, corruption,
+                    accountability and institutions.
+
+                </p>
+
+            </div>
+
+
+            <div class="investigation-list">
+
+
+                <article class="investigation-item">
+
+                    <div class="section-tag">
+                        ANTI-CORRUPTION
+                    </div>
+
+                    <h3>
+                        Ethics & Anti-Corruption Commission
+                    </h3>
+
+                    <p>
+
+                        Official publications and reports
+                        concerning corruption prevention,
+                        investigations and public integrity.
+
+                    </p>
+
+                    <a
+                        class="source"
+                        target="_blank"
+                        href="https://eacc.go.ke/"
+                    >
+                        EACC →
+                    </a>
+
+                </article>
+
+
+                <article class="investigation-item">
+
+                    <div class="section-tag">
+                        PUBLIC FINANCE
+                    </div>
+
+                    <h3>
+                        Government Spending
+                    </h3>
+
+                    <p>
+
+                        Use public finance records to examine
+                        budgets and implementation.
+
+                    </p>
+
+                    <a
+                        class="source"
+                        target="_blank"
+                        href="https://cob.go.ke/"
+                    >
+                        Controller of Budget →
+                    </a>
+
+                </article>
+
+
+                <article class="investigation-item">
+
+                    <div class="section-tag">
+                        COURTS
+                    </div>
+
+                    <h3>
+                        Judicial Records
+                    </h3>
+
+                    <p>
+
+                        Court decisions and official judicial
+                        information for legal reporting.
+
+                    </p>
+
+                    <a
+                        class="source"
+                        target="_blank"
+                        href="https://judiciary.go.ke/"
+                    >
+                        Judiciary →
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     OPINION
+============================================================ -->
+
+<section
+    id="opinion"
+    class="section"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Opinion & Analysis
+                </h2>
+
+                <p class="section-description">
+                    Interpretation, commentary and context —
+                    clearly separated from straight news reporting.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                EDITORIAL DESK
+            </span>
+
+        </div>
+
+
+        <div class="opinion-grid">
+
+
+            <article class="opinion-card">
+
+                <div class="section-tag">
+                    ANALYSIS
+                </div>
+
+                <h3>
+                    Making Sense of Kenya's Political Landscape
+                </h3>
+
+                <p>
+
+                    Explain what political developments could mean
+                    for institutions, citizens and public policy.
+
+                </p>
+
+            </article>
+
+
+            <article class="opinion-card">
+
+                <div class="section-tag">
+                    OPINION
+                </div>
+
+                <h3>
+                    The Issues Behind The Headlines
+                </h3>
+
+                <p>
+
+                    Give writers space to make arguments while
+                    keeping factual claims supported by sources.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     INTERVIEWS
+============================================================ -->
+
+<section
+    id="interviews"
+    class="section section-dark"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Interviews
+                </h2>
+
+                <p class="section-description">
+                    Conversations with leaders, professionals,
+                    businesses and communities.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                INTERVIEW DESK
+            </span>
+
+        </div>
+
+
+        <div class="interview-grid">
+
+
+            <article class="interview-card">
+
+                <div class="section-tag">
+                    POLITICS
+                </div>
+
+                <h3>
+                    Leaders & Decision Makers
+                </h3>
+
+                <p>
+                    Conversations about leadership,
+                    legislation and public policy.
+                </p>
+
+            </article>
+
+
+            <article class="interview-card">
+
+                <div class="section-tag">
+                    BUSINESS
+                </div>
+
+                <h3>
+                    Entrepreneurs & Executives
+                </h3>
+
+                <p>
+                    Conversations about entrepreneurship,
+                    companies and the economy.
+                </p>
+
+            </article>
+
+
+            <article class="interview-card">
+
+                <div class="section-tag">
+                    SOCIETY
+                </div>
+
+                <h3>
+                    Community Voices
+                </h3>
+
+                <p>
+                    Voices from citizens and communities
+                    dealing directly with important issues.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     REPORTS
+============================================================ -->
+
+<section
+    id="reports"
+    class="section"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Research & Reports
+                </h2>
+
+                <p class="section-description">
+                    Official documents and data sources used
+                    to support newsroom reporting.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                RESEARCH CENTRE
+            </span>
+
+        </div>
+
+
+        <div class="reports-box">
+
+            <div class="report-grid">
+
+
+                <article class="report-item">
+
+                    <h3>
+                        Kenya Economic Survey
+                    </h3>
+
+                    <p>
+                        Official economic statistics from KNBS.
+                    </p>
+
+                    <a
+                        class="source"
+                        href="https://www.knbs.or.ke/"
+                        target="_blank"
+                    >
+                        OPEN KNBS →
+                    </a>
+
+                </article>
+
+
+                <article class="report-item">
+
+                    <h3>
+                        County Budget Reports
+                    </h3>
+
+                    <p>
+                        Public finance and county implementation reports.
+                    </p>
+
+                    <a
+                        class="source"
+                        href="https://cob.go.ke/"
+                        target="_blank"
+                    >
+                        OPEN CONTROLLER OF BUDGET →
+                    </a>
+
+                </article>
+
+
+                <article class="report-item">
+
+                    <h3>
+                        EACC Publications
+                    </h3>
+
+                    <p>
+                        Corruption prevention and public integrity reports.
+                    </p>
+
+                    <a
+                        class="source"
+                        href="https://eacc.go.ke/"
+                        target="_blank"
+                    >
+                        OPEN EACC →
+                    </a>
+
+                </article>
+
+
+                <article class="report-item">
+
+                    <h3>
+                        Parliamentary Records
+                    </h3>
+
+                    <p>
+                        Bills, Hansard and House Business.
+                    </p>
+
+                    <a
+                        class="source"
+                        href="https://www.parliament.go.ke/"
+                        target="_blank"
+                    >
+                        OPEN PARLIAMENT →
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     VIDEOS
+============================================================ -->
+
+<section
+    id="videos"
+    class="section video-section"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    The Kenya Civil Report Video
+                </h2>
+
+                <p
+                    class="section-description"
+                    style="color:#aaa"
+                >
+
+                    Video journalism, interviews,
+                    explainers and field reporting.
+
+                </p>
+
+            </div>
+
+            <span
+                class="section-tag"
+                style="color:#d7ab7b"
+            >
+                VIDEO DESK
+            </span>
+
+        </div>
+
+
+        <div class="video-grid">
+
+
+            <article class="video-feature">
+
+                <div class="play-button">
+                    ▶
+                </div>
+
+                <div>
+
+                    <div
+                        class="section-tag"
+                        style="color:#d7ab7b"
+                    >
+                        FEATURED VIDEO
+                    </div>
+
+                    <h3>
+                        Reporting Kenya From The Field
+                    </h3>
+
+                    <p>
+                        News reports, interviews, investigations
+                        and visual explainers.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <div class="video-side">
+
+
+                <article class="video-item">
+
+                    <strong>
+                        Breaking News
+                    </strong>
+
+                    <p>
+                        Fast reports from developing stories.
+                    </p>
+
+                </article>
+
+
+                <article class="video-item">
+
+                    <strong>
+                        County Reports
+                    </strong>
+
+                    <p>
+                        On-location journalism from across Kenya.
+                    </p>
+
+                </article>
+
+
+                <article class="video-item">
+
+                    <strong>
+                        Political Interviews
+                    </strong>
+
+                    <p>
+                        Conversations with leaders and public voices.
+                    </p>
+
+                </article>
+
+
+                <article class="video-item">
+
+                    <strong>
+                        Investigative Video
+                    </strong>
+
+                    <p>
+                        Documentary-style public-interest journalism.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+
+<section
+    id="about"
+    class="section"
+>
+
+    <div class="container about-grid">
+
+
+        <div class="profile-card">
+
+            <div>
+
+                <div class="profile-initials">
+                    JJA
+                </div>
+
+                <h3>
+                    Joab James Apopo
+                </h3>
+
+                <p>
+                    Founder & Owner
+                </p>
+
+                <p>
+                    The Kenya Civil Report
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-text">
+
+            <div class="section-tag">
+                ABOUT TKCR
+            </div>
+
+
+            <h2>
+                The Kenya Civil Report
+            </h2>
+
+
+            <p>
+
+                The Kenya Civil Report (TKCR) is a digital-first
+                Kenyan newsroom founded and owned by
+                <strong>Joab James Apopo</strong>.
+
+            </p>
+
+
+            <p>
+
+                The newsroom is designed to cover Kenyan politics,
+                breaking news, public affairs, governance, county
+                news, business, society, investigations, reports,
+                interviews, opinion, analysis and video journalism.
+
+            </p>
+
+
+            <div class="credentials">
+
+
+                <div class="credential">
+
+                    <strong>
+                        Journalist
+                    </strong>
+
+                    <span>
+                        News and public-interest reporting
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        Digital Media Specialist
+                    </strong>
+
+                    <span>
+                        Digital publishing and storytelling
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        Political & Social Affairs Writer
+                    </strong>
+
+                    <span>
+                        Political and social reporting
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        Video Journalist
+                    </strong>
+
+                    <span>
+                        Field reporting and visual journalism
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     NEWSROOM STUDIO
+============================================================ -->
+
+<section
+    id="studio"
+    class="section studio-section"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    TKCR Newsroom Studio
+                </h2>
+
+                <p class="section-description">
+                    Write stories, manage drafts and record
+                    video journalism from one publishing centre.
+                </p>
+
+            </div>
+
+            <span class="section-tag">
+                PUBLISHER CENTRE
+            </span>
+
+        </div>
+
+
+        <div class="studio">
+
+
+            <!-- STUDIO SIDEBAR -->
+
+            <aside class="studio-sidebar">
+
+                <h3>
+                    TKCR NEWSROOM
+                </h3>
+
+
+                <button
+                    class="studio-button active"
+                    onclick="
+                        openStudioPage(
+                            'studio-home',
+                            this
+                        )
+                    "
+                >
+                    📊 Dashboard
+                </button>
+
+
+                <button
+                    class="studio-button"
+                    onclick="
+                        openStudioPage(
+                            'studio-editor',
+                            this
+                        )
+                    "
+                >
+                    ✍️ Story Editor
+                </button>
+
+
+                <button
+                    class="studio-button"
+                    onclick="
+                        openStudioPage(
+                            'studio-recorder',
+                            this
+                        )
+                    "
+                >
+                    🎥 Video Recorder
+                </button>
+
+
+                <button
+                    class="studio-button"
+                    onclick="
+                        openStudioPage(
+                            'studio-stories',
+                            this
+                        )
+                    "
+                >
+                    📰 Published Stories
+                </button>
+
+
+                <button
+                    class="studio-button"
+                    onclick="
+                        openStudioPage(
+                            'studio-videos',
+                            this
+                        )
+                    "
+                >
+                    🎬 Video Library
+                </button>
+
+
+                <button
+                    class="studio-button"
+                    onclick="
+                        openStudioPage(
+                            'studio-drafts',
+                            this
+                        )
+                    "
+                >
+                    📁 Drafts
+                </button>
+
+            </aside>
+
+
+            <!-- STUDIO CONTENT -->
+
+            <div class="studio-content">
+
+
+                <div
+                    id="studioAlert"
+                    class="studio-alert"
+                ></div>
+
+
+                <!-- =================================================
+                     STUDIO DASHBOARD
+                ================================================== -->
+
+                <section
+                    id="studio-home"
+                    class="studio-page active"
+                >
+
+                    <h1 class="studio-title">
+                        TKCR Newsroom Dashboard
+                    </h1>
+
+                    <p class="studio-subtitle">
+
+                        The Kenya Civil Report publishing
+                        and content-management centre.
+
+                    </p>
+
+
+                    <div class="studio-stat-grid">
+
+
+                        <div class="studio-stat">
+
+                            <span>
+                                Published Stories
+                            </span>
+
+                            <strong id="publishedCount">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="studio-stat">
+
+                            <span>
+                                Published Videos
+                            </span>
+
+                            <strong id="videoCount">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="studio-stat">
+
+                            <span>
+                                Drafts
+                            </span>
+
+                            <strong id="draftCount">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="studio-stat">
+
+                            <span>
+                                Status
+                            </span>
+
+                            <strong>
+                                LIVE
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div
+                        style="
+                        margin-top:22px;
+                        background:white;
+                        padding:28px;
+                        border-radius:7px;
+                        "
+                    >
+
+                        <h2
+                            style="
+                            font-family:Georgia,serif;
+                            "
+                        >
+                            Welcome to the TKCR Publisher Centre
+                        </h2>
+
+
+                        <p
+                            style="
+                            color:#666;
+                            margin-top:8px;
+                            "
+                        >
+
+                            Use the tools on the left to create,
+                            edit, save and publish journalistic
+                            content for The Kenya Civil Report.
+
+                        </p>
+
+
+                        <div
+                            style="
+                            display:flex;
+                            gap:8px;
+                            flex-wrap:wrap;
+                            margin-top:18px;
+                            "
+                        >
+
+                            <button
+                                class="btn btn-brown"
+                                onclick="
+                                    activateStudio(
+                                        'studio-editor'
+                                    )
+                                "
+                            >
+                                WRITE STORY
+                            </button>
+
+
+                            <button
+                                class="btn btn-black"
+                                onclick="
+                                    activateStudio(
+                                        'studio-recorder'
+                                    )
+                                "
+                            >
+                                RECORD VIDEO
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     STORY EDITOR
+                ================================================== -->
+
+                <section
+                    id="studio-editor"
+                    class="studio-page"
+                >
+
+                    <h1 class="studio-title">
+                        TKCR Story Editor
+                    </h1>
+
+                    <p class="studio-subtitle">
+                        Create a professional story for publication.
+                    </p>
+
+
+                    <div class="editor">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                HEADLINE
+                            </label>
+
+                            <input
+                                id="storyHeadline"
+                                type="text"
+                                placeholder="Enter headline..."
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                CATEGORY
+                            </label>
+
+                            <select id="storyCategory">
+
+                                <option>
+                                    News
+                                </option>
+
+                                <option>
+                                    Breaking News
+                                </option>
+
+                                <option>
+                                    Politics
+                                </option>
+
+                                <option>
+                                    Counties
+                                </option>
+
+                                <option>
+                                    Business
+                                </option>
+
+                                <option>
+                                    Society
+                                </option>
+
+                                <option>
+                                    Investigations
+                                </option>
+
+                                <option>
+                                    Opinion
+                                </option>
+
+                                <option>
+                                    Analysis
+                                </option>
+
+                                <option>
+                                    Reports
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                AUTHOR
+                            </label>
+
+                            <input
+                                id="storyAuthor"
+                                value="Joab James Apopo"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                SOURCE / REFERENCE
+                            </label>
+
+                            <input
+                                id="storySource"
+                                type="url"
+                                placeholder="https://..."
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                FEATURED IMAGE URL
+                            </label>
+
+                            <input
+                                id="storyImage"
+                                type="url"
+                                placeholder="https://..."
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                STORY CONTENT
+                            </label>
+
+                            <textarea
+                                id="storyContent"
+                                class="story-editor"
+                                placeholder="Write your article here..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="editor-buttons">
+
+                            <button
+                                class="btn btn-brown"
+                                onclick="
+                                    previewStory()
+                                "
+                            >
+                                👁 PREVIEW
+                            </button>
+
+
+                            <button
+                                class="btn btn-black"
+                                onclick="
+                                    saveDraft()
+                                "
+                            >
+                                💾 SAVE DRAFT
+                            </button>
+
+
+                            <button
+                                class="btn btn-green"
+                                onclick="
+                                    publishStory()
+                                "
+                            >
+                                🚀 PUBLISH
+                            </button>
+
+
+                            <button
+                                class="btn btn-red"
+                                onclick="
+                                    clearEditor()
+                                "
+                            >
+                                CLEAR
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            id="storyPreview"
+                            class="preview"
+                            style="display:none"
+                        ></div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     VIDEO RECORDER
+                ================================================== -->
+
+                <section
+                    id="studio-recorder"
+                    class="studio-page"
+                >
+
+                    <h1 class="studio-title">
+                        TKCR Video Journalist Studio
+                    </h1>
+
+                    <p class="studio-subtitle">
+                        Record field reports, interviews,
+                        explainers and investigations.
+                    </p>
+
+
+                    <div class="recorder">
+
+
+                        <div class="timer">
+                            <span id="recordTimer">
+                                00:00
+                            </span>
+                        </div>
+
+
+                        <div class="camera-screen">
+
+                            <video
+                                id="cameraPreview"
+                                autoplay
+                                muted
+                                playsinline
+                            ></video>
+
+
+                            <video
+                                id="recordedPreview"
+                                controls
+                                playsinline
+                                style="display:none"
+                            ></video>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                VIDEO HEADLINE
+                            </label>
+
+                            <input
+                                id="videoHeadline"
+                                placeholder="Video headline..."
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                CATEGORY
+                            </label>
+
+                            <select
+                                id="videoCategory"
+                            >
+
+                                <option>
+                                    Breaking News
+                                </option>
+
+                                <option>
+                                    Politics
+                                </option>
+
+                                <option>
+                                    Counties
+                                </option>
+
+                                <option>
+                                    Business
+                                </option>
+
+                                <option>
+                                    Society
+                                </option>
+
+                                <option>
+                                    Investigations
+                                </option>
+
+                                <option>
+                                    Interviews
+                                </option>
+
+                                <option>
+                                    Analysis
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="recorder-buttons">
+
+                            <button
+                                class="btn btn-brown"
+                                onclick="
+                                    startCamera()
+                                "
+                            >
+                                📷 CAMERA
+                            </button>
+
+
+                            <button
+                                class="btn btn-red"
+                                onclick="
+                                    startRecording()
+                                "
+                            >
+                                ● RECORD
+                            </button>
+
+
+                            <button
+                                class="btn btn-black"
+                                onclick="
+                                    stopRecording()
+                                "
+                            >
+                                ■ STOP
+                            </button>
+
+
+                            <button
+                                class="btn btn-green"
+                                onclick="
+                                    publishVideo()
+                                "
+                            >
+                                🚀 PUBLISH VIDEO
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            class="record-status"
+                            id="recordStatus"
+                        >
+                            Camera not started.
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     PUBLISHED STORIES
+                ================================================== -->
+
+                <section
+                    id="studio-stories"
+                    class="studio-page"
+                >
+
+                    <h1 class="studio-title">
+                        Published Stories
+                    </h1>
+
+                    <p class="studio-subtitle">
+                        Manage your TKCR newsroom stories.
+                    </p>
+
+
+                    <div
+                        id="publishedStories"
+                        class="management-list"
+                    ></div>
+
+                </section>
+
+
+                <!-- =================================================
+                     VIDEO LIBRARY
+                ================================================== -->
+
+                <section
+                    id="studio-videos"
+                    class="studio-page"
+                >
+
+                    <h1 class="studio-title">
+                        TKCR Video Library
+                    </h1>
+
+                    <p class="studio-subtitle">
+                        Review videos recorded through the newsroom.
+                    </p>
+
+
+                    <div
+                        id="publishedVideos"
+                        class="management-list"
+                    ></div>
+
+                </section>
+
+
+                <!-- =================================================
+                     DRAFTS
+                ================================================== -->
+
+                <section
+                    id="studio-drafts"
+                    class="studio-page"
+                >
+
+                    <h1 class="studio-title">
+                        Saved Drafts
+                    </h1>
+
+                    <p class="studio-subtitle">
+                        Continue stories you have saved.
+                    </p>
+
+
+                    <div
+                        id="draftStories"
+                        class="management-list"
+                    ></div>
+
+                </section>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     FOLLOW TKCR
+============================================================ -->
+
+<section
+    class="follow-section"
+>
+
+    <div class="container follow-inner">
+
+        <div>
+
+            <h2>
+                Follow The Kenya Civil Report
+            </h2>
+
+            <p>
+                Keep up with new stories, reports and videos.
+            </p>
+
+        </div>
+
+
+        <button
+            id="followNewsroomButton"
+            class="follow-main"
+        >
+            + FOLLOW TKCR
+        </button>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3>
+                    THE KENYA CIVIL REPORT
+                </h3>
+
+                <p>
+
+                    The Kenya Civil Report (TKCR) is a
+                    Kenya-focused digital newsroom covering
+                    news, politics, counties, business, society,
+                    investigations, reports, interviews, opinion,
+                    analysis and video journalism.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Sections
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#latest">
+                            Latest News
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#politics">
+                            Politics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#counties">
+                            Counties
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#business">
+                            Business
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#society">
+                            Society
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Journalism
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#investigations">
+                            Investigations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#opinion">
+                            Opinion
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#interviews">
+                            Interviews
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#reports">
+                            Reports
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#videos">
+                            Videos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#studio">
+                            TKCR Newsroom Studio
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Official Sources
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.parliament.go.ke/"
+                        >
+                            Parliament of Kenya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.president.go.ke/"
+                        >
+                            Presidency of Kenya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.knbs.or.ke/"
+                        >
+                            KNBS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://cob.go.ke/"
+                        >
+                            Controller of Budget
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://eacc.go.ke/"
+                        >
+                            EACC
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.iebc.or.ke/"
+                        >
+                            IEBC
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://judiciary.go.ke/"
+                        >
+                            Judiciary
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 The Kenya Civil Report (TKCR)
+            </span>
+
+            <span>
+                Founded & Owned by Joab James Apopo
+            </span>
+
+            <span>
+                Kenya Digital Newsroom
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+
+/* ============================================================
+   01. TKCR SEARCH
+============================================================ */
+
+const searchableContent = [
+
+    {
+        title:
+            "Kenya Politics & Public Affairs",
+
+        category:
+            "Politics",
+
+        description:
+            "National politics, public leadership, governance, Parliament and policy.",
+
+        url:
+            "https://www.president.go.ke/"
+    },
+
+    {
+        title:
+            "Parliament of Kenya",
+
+        category:
+            "Politics",
+
+        description:
+            "Bills, House Business, legislation and Hansard.",
+
+        url:
+            "https://www.parliament.go.ke/"
+    },
+
+    {
+        title:
+            "Kenya Economic Statistics",
+
+        category:
+            "Business",
+
+        description:
+            "GDP, economic growth, prices, business and national statistics.",
+
+        url:
+            "https://www.knbs.or.ke/"
+    },
+
+    {
+        title:
+            "Kenya's 47 Counties",
+
+        category:
+            "Counties",
+
+        description:
+            "County governments, governors and devolution.",
+
+        url:
+            "https://cog.go.ke/the-47-counties/"
+    },
+
+    {
+        title:
+            "Kenya Public Finance",
+
+        category:
+            "Reports",
+
+        description:
+            "County spending and budget implementation.",
+
+        url:
+            "https://cob.go.ke/"
+    },
+
+    {
+        title:
+            "EACC Publications",
+
+        category:
+            "Investigations",
+
+        description:
+            "Anti-corruption reports and public integrity information.",
+
+        url:
+            "https://eacc.go.ke/"
+    },
+
+    {
+        title:
+            "Kenya Judiciary",
+
+        category:
+            "Investigations",
+
+        description:
+            "Judicial information and court resources.",
+
+        url:
+            "https://judiciary.go.ke/"
+    }
+
+];
+
+
+function searchWebsite() {
+
+    const input =
+        document.getElementById(
+            "searchInput"
+        );
+
+    const query =
+        input.value
+            .trim()
+            .toLowerCase();
+
+
+    const results =
+        document.getElementById(
+            "searchResults"
+        );
+
+
+    const help =
+        document.getElementById(
+            "searchHelp"
+        );
+
+
+    if (!query) {
+
+        results.classList.remove(
+            "active"
+        );
+
+        results.innerHTML = "";
+
+        help.textContent =
+            "Search stories, topics, categories and reports";
+
+        return;
+
+    }
+
+
+    const matches =
+        searchableContent.filter(
+            item =>
+
+                item.title
+                    .toLowerCase()
+                    .includes(query)
+
+                ||
+
+                item.category
+                    .toLowerCase()
+                    .includes(query)
+
+                ||
+
+                item.description
+                    .toLowerCase()
+                    .includes(query)
+        );
+
+
+    results.classList.add(
+        "active"
+    );
+
+
+    if (!matches.length) {
+
+        results.innerHTML = `
+
+            <div class="search-result-item">
+
+                <strong>
+                    No results found.
+                </strong>
+
+                <p>
+                    Try searching for politics,
+                    business, counties, Parliament,
+                    economy, investigations or reports.
+                </p>
+
+            </div>
+
+        `;
+
+        help.textContent =
+            "No matching results";
+
+        return;
+
+    }
+
+
+    help.textContent =
+        `${matches.length} result(s) found`;
+
+
+    results.innerHTML =
+
+        matches.map(
+            item => `
+
+                <div
+                    class="search-result-item"
+                >
+
+                    <div class="section-tag">
+                        ${escapeHTML(
+                            item.category
+                        )}
+                    </div>
+
+                    <h3>
+                        ${escapeHTML(
+                            item.title
+                        )}
+                    </h3>
+
+                    <p>
+                        ${escapeHTML(
+                            item.description
+                        )}
+                    </p>
+
+                    <a
+                        class="source"
+                        href="${escapeHTML(
+                            item.url
+                        )}"
+                        target="_blank"
+                    >
+                        OPEN SOURCE →
+                    </a>
+
+                </div>
+
+            `
+        ).join("");
+
+}
+
+
+document
+    .getElementById(
+        "searchInput"
+    )
+    .addEventListener(
+        "keydown",
+        function(event) {
+
+            if (
+                event.key ===
+                "Enter"
+            ) {
+
+                searchWebsite();
+
+            }
+
+        }
+    );
+
+
+/* ============================================================
+   02. FILTERS
+============================================================ */
+
+document
+    .querySelectorAll(
+        ".filter"
+    )
+    .forEach(
+        button => {
+
+            button.addEventListener(
+                "click",
+                function() {
+
+                    document
+                        .querySelectorAll(
+                            ".filter"
+                        )
+                        .forEach(
+                            item =>
+                                item.classList.remove(
+                                    "active"
+                                )
+                        );
+
+
+                    this.classList.add(
+                        "active"
+                    );
+
+
+                    const filter =
+                        this.dataset.filter;
+
+
+                    document
+                        .querySelectorAll(
+                            ".story-card"
+                        )
+                        .forEach(
+                            card => {
+
+                                const categories =
+                                    card
+                                        .dataset
+                                        .category
+                                        .split(" ");
+
+
+                                if (
+
+                                    filter ===
+                                    "all"
+
+                                    ||
+
+                                    categories
+                                        .includes(
+                                            filter
+                                        )
+
+                                ) {
+
+                                    card.style.display =
+                                        "block";
+
+                                }
+
+                                else {
+
+                                    card.style.display =
+                                        "none";
+
+                                }
+
+                            }
+                        );
+
+                }
+            );
+
+        }
+    );
+
+
+/* ============================================================
+   03. LIKES
+============================================================ */
+
+document
+    .querySelectorAll(
+        ".like-button"
+    )
+    .forEach(
+        button => {
+
+            const story =
+                button.dataset.story;
+
+
+            let count =
+                parseInt(
+
+                    localStorage.getItem(
+                        "tkcr-like-" + story
+                    )
+
+                    || "0"
+
+                );
+
+
+            const liked =
+                localStorage.getItem(
+                    "tkcr-liked-" + story
+                ) === "true";
+
+
+            button
+                .querySelector("span")
+                .textContent =
+                count;
+
+
+            if (liked) {
+
+                button.classList.add(
+                    "liked"
+                );
+
+            }
+
+
+            button.addEventListener(
+                "click",
+                function() {
+
+                    const current =
+                        localStorage.getItem(
+                            "tkcr-liked-" + story
+                        ) === "true";
+
+
+                    if (current) {
+
+                        count--;
+
+                        localStorage.setItem(
+                            "tkcr-liked-" + story,
+                            "false"
+                        );
+
+                        button.classList.remove(
+                            "liked"
+                        );
+
+                    }
+
+                    else {
+
+                        count++;
+
+                        localStorage.setItem(
+                            "tkcr-liked-" + story,
+                            "true"
+                        );
+
+                        button.classList.add(
+                            "liked"
+                        );
+
+                    }
+
+
+                    localStorage.setItem(
+                        "tkcr-like-" + story,
+                        count
+                    );
+
+
+                    button
+                        .querySelector("span")
+                        .textContent =
+                        count;
+
+                }
+            );
+
+        }
+    );
+
+
+/* ============================================================
+   04. FOLLOW STORY
+============================================================ */
+
+document
+    .querySelectorAll(
+        ".follow-button"
+    )
+    .forEach(
+        button => {
+
+            const story =
+                button.dataset.story;
+
+
+            if (
+
+                localStorage.getItem(
+                    "tkcr-follow-" + story
+                ) === "true"
+
+            ) {
+
+                button.classList.add(
+                    "following"
+                );
+
+                button.textContent =
+                    "✓ Following";
+
+            }
+
+
+            button.addEventListener(
+                "click",
+                function() {
+
+                    const current =
+                        localStorage.getItem(
+                            "tkcr-follow-" + story
+                        ) === "true";
+
+
+                    if (current) {
+
+                        localStorage.setItem(
+                            "tkcr-follow-" + story,
+                            "false"
+                        );
+
+                        button.classList.remove(
+                            "following"
+                        );
+
+                        button.textContent =
+                            "+ Follow";
+
+                    }
+
+                    else {
+
+                        localStorage.setItem(
+                            "tkcr-follow-" + story,
+                            "true"
+                        );
+
+                        button.classList.add(
+                            "following"
+                        );
+
+                        button.textContent =
+                            "✓ Following";
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+
+/* ============================================================
+   05. COMMENTS
+============================================================ */
+
+function addComment(
+    event,
+    storyId
+) {
+
+    event.preventDefault();
+
+
+    const input =
+        document.getElementById(
+            "comment-" + storyId
+        );
+
+
+    const text =
+        input.value.trim();
+
+
+    if (!text) {
+
+        return;
+
+    }
+
+
+    const comments =
+        JSON.parse(
+
+            localStorage.getItem(
+                "tkcr-comments-" + storyId
+            )
+
+            || "[]"
+
+        );
+
+
+    comments.push({
+
+        user:
+            "Reader",
+
+        text:
+            text,
+
+        date:
+            new Date().toLocaleString()
+
+    });
+
+
+    localStorage.setItem(
+
+        "tkcr-comments-" + storyId,
+
+        JSON.stringify(
+            comments
+        )
+
+    );
+
+
+    input.value =
+        "";
+
+
+    renderComments(
+        storyId
+    );
+
+}
+
+
+function renderComments(
+    storyId
+) {
+
+    const container =
+        document.getElementById(
+            "comment-list-" + storyId
+        );
+
+
+    const comments =
+        JSON.parse(
+
+            localStorage.getItem(
+                "tkcr-comments-" + storyId
+            )
+
+            || "[]"
+
+        );
+
+
+    if (!comments.length) {
+
+        container.innerHTML = `
+
+            <div
+                style="
+                color:#999;
+                font-size:11px;
+                padding:3px;
+                "
+            >
+                No comments yet.
+                Start the discussion.
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+
+        comments.map(
+            comment => `
+
+                <div class="comment">
+
+                    <strong>
+                        ${escapeHTML(
+                            comment.user
+                        )}
+                    </strong>
+
+                    ${escapeHTML(
+                        comment.text
+                    )}
+
+                    <small>
+                        ${escapeHTML(
+                            comment.date
+                        )}
+                    </small>
+
+                </div>
+
+            `
+        ).join("");
+
+}
+
+
+[
+    "home-story-1",
+    "home-story-2",
+    "home-story-3"
+].forEach(
+    renderComments
+);
+
+
+function focusComment(
+    storyId
+) {
+
+    const input =
+        document.getElementById(
+            "comment-" + storyId
+        );
+
+
+    input.scrollIntoView({
+        behavior:
+            "smooth",
+        block:
+            "center"
+    });
+
+
+    setTimeout(
+        () => input.focus(),
+        400
+    );
+
+}
+
+
+/* ============================================================
+   06. SHARE
+============================================================ */
+
+function shareStory(
+    title
+) {
+
+    const shareData = {
+
+        title:
+            "The Kenya Civil Report (TKCR)",
+
+        text:
+            title,
+
+        url:
+            window.location.href
+
+    };
+
+
+    if (
+        navigator.share
+    ) {
+
+        navigator.share(
+            shareData
+        );
+
+    }
+
+    else if (
+        navigator.clipboard
+    ) {
+
+        navigator.clipboard
+            .writeText(
+                window.location.href
+            )
+            .then(
+                () =>
+                    alert(
+                        "TKCR story link copied."
+                    )
+            );
+
+    }
+
+    else {
+
+        alert(
+            "Copy the page address to share this TKCR story."
+        );
+
+    }
+
+}
+
+
+/* ============================================================
+   07. FOLLOW TKCR
+============================================================ */
+
+const followButton =
+    document.getElementById(
+        "followNewsroomButton"
+    );
+
+
+if (
+
+    localStorage.getItem(
+        "tkcr-follow-newsroom"
+    ) === "true"
+
+) {
+
+    followButton.textContent =
+        "✓ FOLLOWING TKCR";
+
+}
+
+
+followButton.addEventListener(
+    "click",
+    function() {
+
+        const following =
+            localStorage.getItem(
+                "tkcr-follow-newsroom"
+            ) === "true";
+
+
+        if (following) {
+
+            localStorage.setItem(
+                "tkcr-follow-newsroom",
+                "false"
+            );
+
+            this.textContent =
+                "+ FOLLOW TKCR";
+
+        }
+
+        else {
+
+            localStorage.setItem(
+                "tkcr-follow-newsroom",
+                "true"
+            );
+
+            this.textContent =
+                "✓ FOLLOWING TKCR";
+
+        }
+
+    }
+);
+
+
+/* ============================================================
+   08. STUDIO NAVIGATION
+============================================================ */
+
+function openStudioPage(
+    pageId,
+    button
+) {
+
+    document
+        .querySelectorAll(
+            ".studio-page"
+        )
+        .forEach(
+            page =>
+                page.classList.remove(
+                    "active"
+                )
+        );
+
+
+    document
+        .querySelectorAll(
+            ".studio-button"
+        )
+        .forEach(
+            item =>
+                item.classList.remove(
+                    "active"
+                )
+        );
+
+
+    document
+        .getElementById(
+            pageId
+        )
+        .classList.add(
+            "active"
+        );
+
+
+    if (button) {
+
+        button.classList.add(
+            "active"
+        );
+
+    }
+
+}
+
+
+function activateStudio(
+    pageId
+) {
+
+    const buttons =
+        document.querySelectorAll(
+            ".studio-button"
+        );
+
+
+    let target =
+        null;
+
+
+    buttons.forEach(
+        button => {
+
+            const attribute =
+                button.getAttribute(
+                    "onclick"
+                );
+
+
+            if (
+                attribute &&
+                attribute.includes(
+                    pageId
+                )
+            ) {
+
+                target =
+                    button;
+
+            }
+
+        }
+    );
+
+
+    openStudioPage(
+        pageId,
+        target
+    );
+
+}
+
+
+/* ============================================================
+   09. STUDIO ALERT
+============================================================ */
+
+function studioAlert(
+    message,
+    type = "success"
+) {
+
+    const alert =
+        document.getElementById(
+            "studioAlert"
+        );
+
+
+    alert.textContent =
+        message;
+
+
+    alert.className =
+        "studio-alert show " +
+        type;
+
+
+    setTimeout(
+        () =>
+            alert.classList.remove(
+                "show"
+            ),
+        4000
+    );
+
+}
+
+
+/* ============================================================
+   10. STORY PREVIEW
+============================================================ */
+
+function previewStory() {
+
+    const headline =
+        document.getElementById(
+            "storyHeadline"
+        ).value.trim();
+
+
+    const category =
+        document.getElementById(
+            "storyCategory"
+        ).value;
+
+
+    const author =
+        document.getElementById(
+            "storyAuthor"
+        ).value.trim();
+
+
+    const image =
+        document.getElementById(
+            "storyImage"
+        ).value.trim();
+
+
+    const content =
+        document.getElementById(
+            "storyContent"
+        ).value.trim();
+
+
+    if (
+        !headline ||
+        !content
+    ) {
+
+        studioAlert(
+            "Enter a headline and story content first.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    const preview =
+        document.getElementById(
+            "storyPreview"
+        );
+
+
+    preview.style.display =
+        "block";
+
+
+    preview.innerHTML = `
+
+        ${
+            image
+            ?
+            `
+                <img
+                    src="${escapeHTML(
+                        image
+                    )}"
+                    alt="TKCR story image"
+                >
+            `
+            :
+            ""
+        }
+
+
+        <div class="section-tag">
+            ${escapeHTML(
+                category
+            )}
+        </div>
+
+
+        <h2>
+            ${escapeHTML(
+                headline
+            )}
+        </h2>
+
+
+        <div
+            style="
+            color:#888;
+            font-size:12px;
+            margin-bottom:14px;
+            "
+        >
+
+            By
+            ${escapeHTML(
+                author
+            )}
+
+            •
+
+            ${new Date().toLocaleDateString()}
+
+        </div>
+
+
+        <p>
+            ${escapeHTML(
+                content
+            )}
+        </p>
+
+    `;
+
+}
+
+
+/* ============================================================
+   11. STORY STORAGE
+============================================================ */
+
+function getStories() {
+
+    return JSON.parse(
+
+        localStorage.getItem(
+            "tkcr-published-stories"
+        )
+
+        || "[]"
+
+    );
+
+}
+
+
+/* ============================================================
+   12. DRAFT STORAGE
+============================================================ */
+
+function getDrafts() {
+
+    return JSON.parse(
+
+        localStorage.getItem(
+            "tkcr-drafts"
+        )
+
+        || "[]"
+
+    );
+
+}
+
+
+/* ============================================================
+   13. SAVE DRAFT
+============================================================ */
+
+function saveDraft() {
+
+    const headline =
+        document.getElementById(
+            "storyHeadline"
+        ).value.trim();
+
+
+    const category =
+        document.getElementById(
+            "storyCategory"
+        ).value;
+
+
+    const author =
+        document.getElementById(
+            "storyAuthor"
+        ).value.trim();
+
+
+    const source =
+        document.getElementById(
+            "storySource"
+        ).value.trim();
+
+
+    const image =
+        document.getElementById(
+            "storyImage"
+        ).value.trim();
+
+
+    const content =
+        document.getElementById(
+            "storyContent"
+        ).value.trim();
+
+
+    if (
+        !headline ||
+        !content
+    ) {
+
+        studioAlert(
+            "Add a headline and story content.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    const drafts =
+        getDrafts();
+
+
+    drafts.unshift({
+
+        id:
+            Date.now(),
+
+        headline,
+
+        category,
+
+        author,
+
+        source,
+
+        image,
+
+        content,
+
+        date:
+            new Date().toLocaleString()
+
+    });
+
+
+    localStorage.setItem(
+
+        "tkcr-drafts",
+
+        JSON.stringify(
+            drafts
+        )
+
+    );
+
+
+    updateDashboard();
+
+    renderDrafts();
+
+    studioAlert(
+        "TKCR draft saved successfully."
+    );
+
+}
+
+
+/* ============================================================
+   14. PUBLISH STORY
+============================================================ */
+
+function publishStory() {
+
+    const headline =
+        document.getElementById(
+            "storyHeadline"
+        ).value.trim();
+
+
+    const category =
+        document.getElementById(
+            "storyCategory"
+        ).value;
+
+
+    const author =
+        document.getElementById(
+            "storyAuthor"
+        ).value.trim();
+
+
+    const source =
+        document.getElementById(
+            "storySource"
+        ).value.trim();
+
+
+    const image =
+        document.getElementById(
+            "storyImage"
+        ).value.trim();
+
+
+    const content =
+        document.getElementById(
+            "storyContent"
+        ).value.trim();
+
+
+    if (
+        !headline ||
+        !content
+    ) {
+
+        studioAlert(
+            "A headline and story are required before publishing.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    const stories =
+        getStories();
+
+
+    stories.unshift({
+
+        id:
+            Date.now(),
+
+        headline,
+
+        category,
+
+        author,
+
+        source,
+
+        image,
+
+        content,
+
+        date:
+            new Date().toLocaleString(),
+
+        views:
+            0,
+
+        likes:
+            0
+
+    });
+
+
+    localStorage.setItem(
+
+        "tkcr-published-stories",
+
+        JSON.stringify(
+            stories
+        )
+
+    );
+
+
+    clearEditor();
+
+    updateDashboard();
+
+    renderPublishedStories();
+
+    studioAlert(
+        "TKCR story published successfully."
+    );
+
+}
+
+
+/* ============================================================
+   15. CLEAR STORY EDITOR
+============================================================ */
+
+function clearEditor() {
+
+    document.getElementById(
+        "storyHeadline"
+    ).value =
+        "";
+
+
+    document.getElementById(
+        "storyCategory"
+    ).value =
+        "News";
+
+
+    document.getElementById(
+        "storyAuthor"
+    ).value =
+        "Joab James Apopo";
+
+
+    document.getElementById(
+        "storySource"
+    ).value =
+        "";
+
+
+    document.getElementById(
+        "storyImage"
+    ).value =
+        "";
+
+
+    document.getElementById(
+        "storyContent"
+    ).value =
+        "";
+
+
+    document.getElementById(
+        "storyPreview"
+    ).style.display =
+        "none";
+
+}
+
+
+/* ============================================================
+   16. PUBLISHED STORIES
+============================================================ */
+
+function renderPublishedStories() {
+
+    const container =
+        document.getElementById(
+            "publishedStories"
+        );
+
+
+    const stories =
+        getStories();
+
+
+    if (!stories.length) {
+
+        container.innerHTML = `
+
+            <div class="management-item">
+
+                <strong>
+                    No TKCR stories published yet.
+                </strong>
+
+                <p>
+                    Published newsroom stories will appear here.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+
+        stories.map(
+            story => `
+
+                <article
+                    class="management-item"
+                >
+
+                    <small>
+                        ${escapeHTML(
+                            story.category
+                        )}
+                        •
+                        ${escapeHTML(
+                            story.date
+                        )}
+                    </small>
+
+
+                    <h3>
+                        ${escapeHTML(
+                            story.headline
+                        )}
+                    </h3>
+
+
+                    <p>
+                        ${escapeHTML(
+                            story.content.substring(
+                                0,
+                                350
+                            )
+                        )}
+                        ${story.content.length > 350 ? "..." : ""}
+                    </p>
+
+
+                    <div class="management-actions">
+
+                        <button
+                            class="btn btn-red"
+                            onclick="
+                                deleteStory(
+                                    ${story.id}
+                                )
+                            "
+                        >
+                            DELETE
+                        </button>
+
+                    </div>
+
+                </article>
+
+            `
+        ).join("");
+
+}
+
+
+/* ============================================================
+   17. DELETE STORY
+============================================================ */
+
+function deleteStory(
+    id
+) {
+
+    let stories =
+        getStories();
+
+
+    stories =
+        stories.filter(
+            story =>
+                story.id !== id
+        );
+
+
+    localStorage.setItem(
+
+        "tkcr-published-stories",
+
+        JSON.stringify(
+            stories
+        )
+
+    );
+
+
+    updateDashboard();
+
+    renderPublishedStories();
+
+    studioAlert(
+        "TKCR story deleted."
+    );
+
+}
+
+
+/* ============================================================
+   18. DRAFTS
+============================================================ */
+
+function renderDrafts() {
+
+    const container =
+        document.getElementById(
+            "draftStories"
+        );
+
+
+    const drafts =
+        getDrafts();
+
+
+    if (!drafts.length) {
+
+        container.innerHTML = `
+
+            <div class="management-item">
+
+                <strong>
+                    No TKCR drafts saved.
+                </strong>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+
+        drafts.map(
+            draft => `
+
+                <article
+                    class="management-item"
+                >
+
+                    <small>
+                        ${escapeHTML(
+                            draft.category
+                        )}
+                        •
+                        ${escapeHTML(
+                            draft.date
+                        )}
+                    </small>
+
+
+                    <h3>
+                        ${escapeHTML(
+                            draft.headline
+                        )}
+                    </h3>
+
+
+                    <p>
+                        ${escapeHTML(
+                            draft.content.substring(
+                                0,
+                                250
+                            )
+                        )}
+                        ...
+                    </p>
+
+
+                    <div class="management-actions">
+
+
+                        <button
+                            class="btn btn-brown"
+                            onclick="
+                                loadDraft(
+                                    ${draft.id}
+                                )
+                            "
+                        >
+                            CONTINUE
+                        </button>
+
+
+                        <button
+                            class="btn btn-red"
+                            onclick="
+                                deleteDraft(
+                                    ${draft.id}
+                                )
+                            "
+                        >
+                            DELETE
+                        </button>
+
+
+                    </div>
+
+                </article>
+
+            `
+        ).join("");
+
+}
+
+
+/* ============================================================
+   19. LOAD DRAFT
+============================================================ */
+
+function loadDraft(
+    id
+) {
+
+    const drafts =
+        getDrafts();
+
+
+    const draft =
+        drafts.find(
+            item =>
+                item.id === id
+        );
+
+
+    if (!draft) {
+
+        return;
+
+    }
+
+
+    document.getElementById(
+        "storyHeadline"
+    ).value =
+        draft.headline;
+
+
+    document.getElementById(
+        "storyCategory"
+    ).value =
+        draft.category;
+
+
+    document.getElementById(
+        "storyAuthor"
+    ).value =
+        draft.author;
+
+
+    document.getElementById(
+        "storySource"
+    ).value =
+        draft.source;
+
+
+    document.getElementById(
+        "storyImage"
+    ).value =
+        draft.image;
+
+
+    document.getElementById(
+        "storyContent"
+    ).value =
+        draft.content;
+
+
+    activateStudio(
+        "studio-editor"
+    );
+
+
+    studioAlert(
+        "TKCR draft loaded."
+    );
+
+}
+
+
+/* ============================================================
+   20. DELETE DRAFT
+============================================================ */
+
+function deleteDraft(
+    id
+) {
+
+    let drafts =
+        getDrafts();
+
+
+    drafts =
+        drafts.filter(
+            draft =>
+                draft.id !== id
+        );
+
+
+    localStorage.setItem(
+
+        "tkcr-drafts",
+
+        JSON.stringify(
+            drafts
+        )
+
+    );
+
+
+    updateDashboard();
+
+    renderDrafts();
+
+    studioAlert(
+        "TKCR draft deleted."
+    );
+
+}
+
+
+/* ============================================================
+   21. CAMERA
+============================================================ */
+
+let mediaStream =
+    null;
+
+let recorder =
+    null;
+
+let videoChunks =
+    [];
+
+let recordedBlob =
+    null;
+
+let recordSeconds =
+    0;
+
+let recordInterval =
+    null;
+
+
+async function startCamera() {
+
+    try {
+
+        mediaStream =
+
+            await navigator
+                .mediaDevices
+                .getUserMedia({
+
+                    video:
+                        true,
+
+                    audio:
+                        true
+
+                });
+
+
+        const preview =
+            document.getElementById(
+                "cameraPreview"
+            );
+
+
+        preview.srcObject =
+            mediaStream;
+
+
+        preview.style.display =
+            "block";
+
+
+        document.getElementById(
+            "recordedPreview"
+        ).style.display =
+            "none";
+
+
+        document.getElementById(
+            "recordStatus"
+        ).textContent =
+            "TKCR camera ready.";
+
+    }
+
+    catch(error) {
+
+        studioAlert(
+            "Camera or microphone access could not be started.",
+            "error"
+        );
+
+    }
+
+}
+
+
+/* ============================================================
+   22. START RECORDING
+============================================================ */
+
+function startRecording() {
+
+    if (!mediaStream) {
+
+        studioAlert(
+            "Start the camera first.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    videoChunks = [];
+
+
+    try {
+
+        recorder =
+            new MediaRecorder(
+                mediaStream
+            );
+
+    }
+
+    catch(error) {
+
+        studioAlert(
+            "Your browser does not support video recording.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    recorder.ondataavailable =
+        event => {
+
+            if (
+                event.data &&
+                event.data.size > 0
+            ) {
+
+                videoChunks.push(
+                    event.data
+                );
+
+            }
+
+        };
+
+
+    recorder.onstop =
+        () => {
+
+            recordedBlob =
+
+                new Blob(
+                    videoChunks,
+                    {
+                        type:
+                            "video/webm"
+                    }
+                );
+
+
+            const url =
+                URL.createObjectURL(
+                    recordedBlob
+                );
+
+
+            const preview =
+                document.getElementById(
+                    "recordedPreview"
+                );
+
+
+            preview.src =
+                url;
+
+
+            preview.style.display =
+                "block";
+
+
+            document.getElementById(
+                "cameraPreview"
+            ).style.display =
+                "none";
+
+
+            document.getElementById(
+                "recordStatus"
+            ).textContent =
+                "TKCR recording complete. Preview the video or publish it.";
+
+        };
+
+
+    recorder.start();
+
+
+    recordSeconds =
+        0;
+
+
+    updateTimer();
+
+
+    recordInterval =
+        setInterval(
+            updateTimer,
+            1000
+        );
+
+
+    document.getElementById(
+        "recordStatus"
+    ).textContent =
+        "TKCR recording live...";
+
+}
+
+
+/* ============================================================
+   23. STOP RECORDING
+============================================================ */
+
+function stopRecording() {
+
+    if (
+
+        !recorder
+
+        ||
+
+        recorder.state !==
+        "recording"
+
+    ) {
+
+        return;
+
+    }
+
+
+    recorder.stop();
+
+
+    clearInterval(
+        recordInterval
+    );
+
+
+    if (mediaStream) {
+
+        mediaStream
+            .getTracks()
+            .forEach(
+                track =>
+                    track.stop()
+            );
+
+    }
+
+}
+
+
+/* ============================================================
+   24. RECORDING TIMER
+============================================================ */
+
+function updateTimer() {
+
+    recordSeconds++;
+
+
+    const minutes =
+        Math.floor(
+            recordSeconds / 60
+        );
+
+
+    const seconds =
+        recordSeconds % 60;
+
+
+    document.getElementById(
+        "recordTimer"
+    ).textContent =
+
+        String(minutes)
+            .padStart(2,"0")
+
+        +
+
+        ":"
+
+        +
+
+        String(seconds)
+            .padStart(2,"0");
+
+}
+
+
+/* ============================================================
+   25. VIDEO STORAGE
+============================================================ */
+
+function getVideos() {
+
+    return JSON.parse(
+
+        localStorage.getItem(
+            "tkcr-videos"
+        )
+
+        || "[]"
+
+    );
+
+}
+
+
+/* ============================================================
+   26. PUBLISH VIDEO
+============================================================ */
+
+function publishVideo() {
+
+    if (!recordedBlob) {
+
+        studioAlert(
+            "Record a video first.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    const headline =
+        document.getElementById(
+            "videoHeadline"
+        ).value.trim();
+
+
+    const category =
+        document.getElementById(
+            "videoCategory"
+        ).value;
+
+
+    if (!headline) {
+
+        studioAlert(
+            "Enter a video headline.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    const videoUrl =
+        URL.createObjectURL(
+            recordedBlob
+        );
+
+
+    const videos =
+        getVideos();
+
+
+    videos.unshift({
+
+        id:
+            Date.now(),
+
+        headline,
+
+        category,
+
+        videoUrl,
+
+        date:
+            new Date().toLocaleString()
+
+    });
+
+
+    localStorage.setItem(
+
+        "tkcr-videos",
+
+        JSON.stringify(
+            videos
+        )
+
+    );
+
+
+    document.getElementById(
+        "videoHeadline"
+    ).value =
+        "";
+
+
+    updateDashboard();
+
+    renderPublishedVideos();
+
+    studioAlert(
+        "TKCR video published."
+    );
+
+}
+
+
+/* ============================================================
+   27. VIDEO LIBRARY
+============================================================ */
+
+function renderPublishedVideos() {
+
+    const container =
+        document.getElementById(
+            "publishedVideos"
+        );
+
+
+    const videos =
+        getVideos();
+
+
+    if (!videos.length) {
+
+        container.innerHTML = `
+
+            <div class="management-item">
+
+                <strong>
+                    No TKCR videos published yet.
+                </strong>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+
+        videos.map(
+            video => `
+
+                <article
+                    class="management-item"
+                >
+
+                    <small>
+                        ${escapeHTML(
+                            video.category
+                        )}
+                        •
+                        ${escapeHTML(
+                            video.date
+                        )}
+                    </small>
+
+
+                    <h3>
+                        ${escapeHTML(
+                            video.headline
+                        )}
+                    </h3>
+
+
+                    <video
+                        controls
+                        playsinline
+                        style="
+                        width:100%;
+                        margin-top:12px;
+                        background:#000;
+                        border-radius:5px;
+                        "
+                        src="${video.videoUrl}"
+                    ></video>
+
+
+                </article>
+
+            `
+        ).join("");
+
+}
+
+
+/* ============================================================
+   28. DASHBOARD COUNTERS
+============================================================ */
+
+function updateDashboard() {
+
+    const stories =
+        getStories();
+
+
+    const videos =
+        getVideos();
+
+
+    const drafts =
+        getDrafts();
+
+
+    document.getElementById(
+        "publishedCount"
+    ).textContent =
+        stories.length;
+
+
+    document.getElementById(
+        "videoCount"
+    ).textContent =
+        videos.length;
+
+
+    document.getElementById(
+        "draftCount"
+    ).textContent =
+        drafts.length;
+
+}
+
+
+/* ============================================================
+   29. SECURITY HELPER
+============================================================ */
+
+function escapeHTML(
+    value
+) {
+
+    const element =
+        document.createElement(
+            "div"
+        );
+
+
+    element.textContent =
+        value;
+
+
+    return element.innerHTML;
+
+}
+
+
+/* ============================================================
+   30. INITIALIZE TKCR
+============================================================ */
+
+renderPublishedStories();
+
+renderPublishedVideos();
+
+renderDrafts();
+
+updateDashboard();
+
+
+</script>
+
+</body>
+
+</html>
